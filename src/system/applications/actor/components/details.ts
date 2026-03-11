@@ -158,7 +158,7 @@ any> {
                 ({ rate, label }) => `
                 <div>
                     <span><b>${label}:</b></span>
-                    <span>${rate} ${game.i18n.localize('COSMERE.DistanceUnit')}</span>
+                    <span>${rate} ${game.i18n.localize('GENERIC.DistanceUnit')}</span>
                 </div>
             `,
             );
