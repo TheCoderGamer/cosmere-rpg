@@ -415,6 +415,17 @@
                 }
             },
             "Weapon": {
+                "Axe": "Axe",
+                "Hammer": "Hammer",
+                "Knife": "Knife",
+                "Longsword": "Longsword",
+                "Longspear": "Longspear",
+                "Mace": "Mace",
+                "Shield": "Shield",
+                "Shortbow": "Shortbow",
+                "Shortspear": "Shortspear",
+                "Sidesword": "Sidesword",
+                "Staff": "Staff",
                 "Type": {
                     "Light": "Light",
                     "Heavy": "Heavy",
@@ -446,6 +457,12 @@
                 "Unarmed": "Unarmed Strike"
             },
             "Armor": {
+                "Breastplate": "Breastplate",
+                "Chain": "Chain",
+                "FullPlate": "Full Plate",
+                "HalfPlate": "Half Plate",
+                "Leather": "Leather",
+                "Uniform": "Uniform",
                 "Name": {
                     "placeholder": "[Armor Name]"
                 },
@@ -1242,6 +1259,14 @@
             "ToggleTurn": "Toggle Turn Speed",
             "ResetActivation": "Reset Activation",
             "Activate": "Mark as Acted"
+        },
+        "Culture": {
+            "Alethi": "Alethi",
+            "Azish": "Azish",
+            "Herdazian": "Herdazian",
+            "Thaylen": "Thaylen",
+            "Unkalaki": "Unkalaki",
+            "Veden": "Veden"
         },
         "Status": {
             "Afflicted": "Afflicted",

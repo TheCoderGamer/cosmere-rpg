@@ -3,32 +3,32 @@ import { SYSTEM_ID } from '@system/constants';
 const ARMOR = [
     {
         id: 'breastplate',
-        label: 'Breastplate',
+        label: 'COSMERE.Item.Armor.Breastplate',
         reference: 'Compendium.cosmere-rpg.items.Item.xLer8raOT6EkLfWN',
     },
     {
         id: 'chain',
-        label: 'Chain',
+        label: 'COSMERE.Item.Armor.Chain',
         reference: 'Compendium.cosmere-rpg.items.Item.6y5hONLMQa4O2wnU',
     },
     {
         id: 'full-plate',
-        label: 'Full Plate',
+        label: 'COSMERE.Item.Armor.FullPlate',
         reference: 'Compendium.cosmere-rpg.items.Item.t97DN6FAh7BMNvcP',
     },
     {
         id: 'half-plate',
-        label: 'Half Plate',
+        label: 'COSMERE.Item.Armor.HalfPlate',
         reference: 'Compendium.cosmere-rpg.items.Item.GlrRu1goky9ifKCl',
     },
     {
         id: 'leather',
-        label: 'Leather',
+        label: 'COSMERE.Item.Armor.Leather',
         reference: 'Compendium.cosmere-rpg.items.Item.dxty96So3kGZVhv5',
     },
     {
         id: 'uniform',
-        label: 'Uniform',
+        label: 'COSMERE.Item.Armor.Uniform',
         reference: 'Compendium.cosmere-rpg.items.Item.SRLLAWCE7rwS40Pv',
     },
 ];
