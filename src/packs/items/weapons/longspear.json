@@ -31,7 +31,7 @@
             "type": "melee",
             "range": {
                 "value": 5,
-                "unit": "ft"
+                "unit": "m"
             }
         },
         "traits": {

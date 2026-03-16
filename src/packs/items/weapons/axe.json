@@ -60,7 +60,7 @@
             "range": {
                 "value": 20,
                 "long": 60,
-                "unit": "ft"
+                "unit": "m"
             }
         },
         "alwaysEquipped": false,

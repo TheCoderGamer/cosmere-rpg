@@ -144,7 +144,7 @@
             "range": {
                 "value": 80,
                 "long": 320,
-                "unit": "ft"
+                "unit": "m"
             }
         },
         "alwaysEquipped": false,

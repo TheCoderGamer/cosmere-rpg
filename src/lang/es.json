@@ -1,0 +1,1744 @@
+{
+    "COSMERE": {
+        "title": "Cosmere RPG",
+        "Actor": {
+            "Character": {
+                "Character": "Personaje",
+                "Cultures": {
+                    "placeholder": "[Cultura]"
+                },
+                "Ancestry": {
+                    "placeholder": "[Ascendencia]"
+                },
+                "Path": {
+                    "placeholder": "[Camino]"
+                },
+                "Specialties": {
+                    "placeholder": "[Especialidad]"
+                },
+                "Expertise": {
+                    "name": "Pericia",
+                    "Armor": "Armadura",
+                    "Cultural": "Cultural",
+                    "Specialist": "Especialista",
+                    "Utility": "Utilitaria",
+                    "Weapon": "Arma"
+                }
+            },
+            "Adversary": {
+                "Adversary": "Adversario",
+                "Traits": {
+                    "placeholder": "[Rasgo de Adversario]"
+                },
+                "Role": {
+                    "Minion": "Lacayo",
+                    "Rival": "Rival",
+                    "Boss": "Jefe"
+                }
+            },
+            "Actions": {
+                "Aid": "Ayudar",
+                "AvoidDanger": "Esquivar Peligro",
+                "Banter": "Intercambio",
+                "Brace": "Prepararse",
+                "Disengage": "Desengancharse",
+                "Dodge": "Esquivar",
+                "Drop": "Soltar",
+                "Enhance": "Potenciar",
+                "GainAdvantage": "Obtener Ventaja",
+                "Grapple": "Aferrar",
+                "Interact": "Interactuar",
+                "Move": "Mover",
+                "ReactiveStrike": "Golpe Reactivo",
+                "Ready": "Preparar",
+                "Recover": "Recuperar",
+                "Regenerate": "Regenerar",
+                "Shove": "Empujar",
+                "Strike": "Golpe",
+                "UseASkill": "Usar una Habilidad"
+            },
+            "ActionCosts": {
+                "Action": "Acción",
+                "Reaction": "Reacción",
+                "FreeAction": "Acción Libre",
+                "Special": "Especial"
+            },
+            "Attribute": {
+                "name": "Atributo",
+                "name_plural": "Atributos",
+                "Strength": {
+                    "long": "Fuerza",
+                    "short": "FUE"
+                },
+                "Speed": {
+                    "long": "Velocidad",
+                    "short": "VEL"
+                },
+                "Intellect": {
+                    "long": "Intelecto",
+                    "short": "INT"
+                },
+                "Willpower": {
+                    "long": "Voluntad",
+                    "short": "VOL"
+                },
+                "Awareness": {
+                    "long": "Percepcion",
+                    "short": "PER"
+                },
+                "Presence": {
+                    "long": "Presencia",
+                    "short": "PRE"
+                }
+            },
+            "Resource": {
+                "Health": "Salud",
+                "Focus": "Concentración",
+                "Investiture": "Investidura"
+            },
+            "Skill": {
+                "label": "Habilidad",
+                "label_p": "Habilidades",
+                "Agility": "Agilidad",
+                "Athletics": "Atletismo",
+                "HeavyWeapons": "Armamento Pesado",
+                "LightWeapons": "Armamento Ligero",
+                "Stealth": "Sigilo",
+                "Thievery": "Hurto",
+                "Crafting": "Manufactura",
+                "Deduction": "Deducción",
+                "Discipline": "Disciplina",
+                "Intimidation": "Intimidación",
+                "Lore": "Saber",
+                "Medicine": "Medicina",
+                "Deception": "Engaño",
+                "Insight": "Perspicacia",
+                "Leadership": "Liderazgo",
+                "Perception": "Percepcion",
+                "Persuasion": "Persuasión",
+                "Survival": "Supervivencia"
+            },
+            "Statistics": {
+                "Defense": "Defensa",
+                "SensesRange": "Alcance de los sentidos",
+                "MovementRate": "Movimiento",
+                "LiftingCapactiy": "Capacidad de Carga",
+                "RecoveryDie": "Dado de Recuperación",
+                "Deflect": "Desvío",
+                "NoObscuredSense": "No afectado por Sentidos ofuscados.",
+                "Immunities": "Inmunidades"
+            },
+            "Deflect": {
+                "Natural": {
+                    "Label": "Desvío Natural",
+                    "Hint": "La Desvío natural se usa cuando no se lleva armadura, o cuando la Desvío natural es mayor que la de la armadura equipada."
+                }
+            },
+            "Size": {
+                "Small": "Pequeño",
+                "Medium": "Mediano",
+                "Large": "Grande",
+                "Huge": "Enorme",
+                "Gargantuan": "Gargantuesco"
+            },
+            "Type": {
+                "Custom": "Personalizado",
+                "Humanoid": "Humanoide",
+                "Animal": "Animal"
+            },
+            "Movement": {
+                "Type": {
+                    "Walk": "Caminar",
+                    "Swim": "Nadar",
+                    "Fly": "Volar"
+                }
+            },
+            "Sheet": {
+                "Header": {
+                    "Editable": "Editable",
+                    "Locked": "Bloqueado"
+                },
+                "Item": {
+                    "Edit": "Editar",
+                    "Details": "Ver/Ocultar Detalles",
+                    "Remove": "Eliminar"
+                },
+                "Actions": {
+                    "label": "Acciones",
+                    "Activation": "Acción",
+                    "Consume": {
+                        "label": "Coste",
+                        "Static": "{amount} {resource}",
+                        "RangeCapped": "{min} - {max} {resource}",
+                        "RangeUncapped": "{amount}+ {resource}",
+                        "Multiple": "Varios",
+                        "Optional": "{label} (Opcional)"
+                    },
+                    "Uses": "Usos",
+                    "Use": "Usar Acción",
+                    "Strike": "Golpe",
+                    "BaseSectionName": "Acciones de {type}",
+                    "MiscSectionName": "Acciones Misceláneas",
+                    "NewItem": "Añadir {type}"
+                },
+                "Equipment": {
+                    "Quantity": "Cantidad",
+                    "Weight": "Peso",
+                    "IncreaseQuantity": "Aumentar cantidad",
+                    "DecreaseQuantity": "Reducir cantidad"
+                },
+                "Inventory": {
+                    "label": "Inventario",
+                    "Item": {
+                        "Quantity": "Cantidad",
+                        "Weight": "Peso"
+                    }
+                },
+                "Conditions": {
+                    "Label": "Condiciones",
+                    "StackableConditionTooltip": "Clic izquierdo para aumentar la cantidad.<br>Clic derecho para reducir la cantidad."
+                },
+                "Injuries": {
+                    "Label": "Heridas",
+                    "Duration": "Duración",
+                    "Days": "días",
+                    "Permanent": "Permanente",
+                    "DecreaseDuration": "Reducir Duración de Herida",
+                    "IncreaseDuration": "Aumentar Duración de Herida",
+                    "CreateInjury": "Nueva Herida",
+                    "NewInjury": "Nueva Herida"
+                },
+                "Level": "Nivel",
+                "Tier": "Rango",
+                "Expertises": "Pericias",
+                "EditExpertises": "Editar Pericias",
+                "EditImmunities": "Editar Inmunidades",
+                "ConfigureSkills": "Configurar Habilidades",
+                "EditRole": "Editar Rol",
+                "EditSize": "Editar Tamaño",
+                "EditType": "Editar Tipo",
+                "CreatureType": "Tipo",
+                "CustomType": "Tipo Personalizado",
+                "Subtype": "Subtipo",
+                "Edit": "Editar",
+                "View": "Ver",
+                "Favorites": "Favoritos",
+                "DropFavorite": "Quitar Favorito",
+                "AncestryPlaceholder": "Añadir Ascendencia",
+                "CulturePlaceholder": "Añadir Cultura",
+                "PathPlaceholder": "Añadir Camino",
+                "EndScene": "Finalizar Escena",
+                "ShortRest": "Descanso Corto",
+                "LongRest": "Descanso Largo",
+                "ToggleShowSkills": "Mostrar habilidades sin rangos",
+                "ToggleCollapseSkills": "Ocultar habilidades sin rangos",
+                "ConfigureDefense": "Configurar Defensa",
+                "ConfigureDeflect": "Configurar Desvío",
+                "ConfigureMovement": "Configurar Velocidad de Movimiento",
+                "ConfigureSensesRange": "Configurar Alcance de Sentidos",
+                "ConfigureRecovery": "Configurar Dado de Recuperación",
+                "RollInjury": "Tirar Herida",
+                "ImmuneTo": "Inmune a {condition}",
+                "Tabs": {
+                    "Details": "Detalles",
+                    "Actions": "Acciones",
+                    "Equipment": "Equipo",
+                    "Goals": "Objetivos",
+                    "Notes": "Notas",
+                    "Effects": "Efectos y Condiciones"
+                },
+                "Search": {
+                    "Item": {
+                        "Placeholder": "Buscar acciones"
+                    },
+                    "Equipment": {
+                        "Placeholder": "Buscar objetos"
+                    },
+                    "Effects": {
+                        "Placeholder": "Buscar efectos"
+                    },
+                    "Clear": "Limpiar Filtros",
+                    "Filter": "Filtrar Por",
+                    "SortManually": "Ordenar Manualmente",
+                    "SortAlphabetically": "Ordenar Alfabéticamente"
+                },
+                "Details": {
+                    "Purpose": "Propósito",
+                    "Obstacle": "Obstáculo",
+                    "Goals": {
+                        "Label": "Objetivos",
+                        "New": "Añadir Nuevo Objetivo",
+                        "NewText": "Nuevo Objetivo",
+                        "AdjustProgressTooltipInc": "Clic izquierdo para aumentar el progreso.",
+                        "AdjustProgressTooltipDec": "Clic derecho para reducir el progreso.",
+                        "HideComplete": "Ocultar Completados"
+                    },
+                    "Connections": {
+                        "Label": "Conexiones",
+                        "New": "Añadir Nueva Conexión",
+                        "NewText": "Nueva Conexión"
+                    },
+                    "Biography": {
+                        "Label": "Biografía",
+                        "Edit": "Editar Biografía",
+                        "Show": "Mostrar Biografía",
+                        "Hide": "Ocultar Biografía"
+                    },
+                    "Appearance": {
+                        "Label": "Apariencia",
+                        "Edit": "Editar Apariencia",
+                        "Show": "Mostrar Apariencia",
+                        "Hide": "Ocultar Apariencia"
+                    },
+                    "Notes": {
+                        "Label": "Notas",
+                        "Edit": "Editar Notas",
+                        "Show": "Mostrar Notas",
+                        "Hide": "Ocultar Notas"
+                    }
+                },
+                "Skills": {
+                    "AdjustTooltip": "Clic izquierdo para aumentar el Rango de {skill}.<br>Clic derecho para reducir el Rango de {skill}.",
+                    "SetTooltip": "Clic izquierdo para ajustar el Rango de {skill}.<br>Clic derecho para limpiar el Rango de {skill}."
+                },
+                "Attributes": {
+                    "Defense": "DEF",
+                    "IsModifiedTooltip": "Este atributo está siendo modificado por un efecto."
+                }
+            }
+        },
+        "AttributeGroup": {
+            "Physical": {
+                "long": "Físico",
+                "short": "FIS"
+            },
+            "Cognitive": {
+                "long": "Cognitivo",
+                "short": "COG"
+            },
+            "Spiritual": {
+                "long": "Espiritual",
+                "short": "ESP"
+            }
+        },
+        "Item": {
+            "Type": {
+                "Weapon": {
+                    "label": "Arma",
+                    "label_plural": "Armas",
+                    "label_action": "Acción de Arma",
+                    "desc_placeholder": "Edita esto para describir qué es esta arma y cómo se ve.",
+                    "New": "Nueva Arma"
+                },
+                "Armor": {
+                    "label": "Armadura",
+                    "label_plural": "Armaduras",
+                    "label_action": "Acción de Armadura",
+                    "desc_placeholder": "Edita esto para describir qué es esta armadura y cómo se ve.",
+                    "New": "Nueva Armadura"
+                },
+                "Equipment": {
+                    "label": "Equipo",
+                    "label_plural": "Equipo",
+                    "label_action": "Acción de Equipo",
+                    "desc_placeholder": "Edita esto para describir qué es este equipo y cómo se ve.",
+                    "New": "Nuevo Equipo"
+                },
+                "Loot": {
+                    "label": "Botín",
+                    "label_plural": "Botín",
+                    "desc_placeholder": "Edita esto para describir el objeto.",
+                    "New": "Nuevo Botín"
+                },
+                "Ancestry": {
+                    "label": "Ascendencia",
+                    "label_plural": "Ascendencias",
+                    "desc_placeholder": "Edita esto para definir un posible origen para un personaje. Incluye también cualquier texto de reglas especiales para que los jugadores lo lean."
+                },
+                "Culture": {
+                    "label": "Cultura",
+                    "label_plural": "Culturas",
+                    "desc_placeholder": "Edita esto para definir una de las muchas culturas del escenario. Incluye también cualquier texto de reglas especiales para que los jugadores lo lean."
+                },
+                "Path": {
+                    "label": "Camino",
+                    "label_plural": "Caminos",
+                    "desc_placeholder": "Edita esto para describir qué tipo de personajes representa este camino de progresión."
+                },
+                "Specialty": {
+                    "label": "Especialidad",
+                    "label_plural": "Especialidades",
+                    "desc_placeholder": "Edita esto para describir el subconjunto único de personajes que representa esta especialidad."
+                },
+                "Talent": {
+                    "label": "Talento",
+                    "label_plural": "Talentos",
+                    "desc_placeholder": "Edita esto para describir qué hace este Talento.",
+                    "New": "Nuevo Talento"
+                },
+                "Action": {
+                    "label": "Acción",
+                    "label_plural": "Acciones",
+                    "desc_placeholder": "Edita esto para describir qué es y qué hace esta acción.",
+                    "New": "Nueva Acción"
+                },
+                "Trait": {
+                    "label": "Característica",
+                    "label_plural": "Características",
+                    "desc_placeholder": "Edita esto para describir esta característica.",
+                    "New": "Nueva Característica"
+                },
+                "Injury": {
+                    "label": "Herida",
+                    "label_plural": "Heridas",
+                    "desc_placeholder": "Edita esto para describir cómo afecta esta herida a un personaje."
+                },
+                "Connection": {
+                    "label": "Conexión",
+                    "label_plural": "Conexiones",
+                    "desc_placeholder": "Edita esto para crear una descripción del PNJ y cómo está relacionado con el personaje."
+                },
+                "Goal": {
+                    "label": "Objetivo",
+                    "label_plural": "Objetivos",
+                    "desc_placeholder": "Edita esto para describir el objetivo."
+                },
+                "Power": {
+                    "label": "Poder",
+                    "label_plural": "Poderes",
+                    "desc_placeholder": "Edita esto para describir el poder.",
+                    "New": "Nuevo {type}"
+                },
+                "TalentTree": {
+                    "label": "Árbol de Talentos",
+                    "label_plural": "Árboles de Talentos"
+                }
+            },
+            "Weapon": {
+                "Axe": "Hacha",
+                "Hammer": "Martillo",
+                "Knife": "Cuchillo",
+                "Longsword": "Espada larga",
+                "Longspear": "Lanza larga",
+                "Mace": "Maza",
+                "Shield": "Escudo",
+                "Shortbow": "Arco corto",
+                "Shortspear": "Lanza corta",
+                "Sidesword": "Espada lateral",
+                "Staff": "Bastón",
+                "Type": {
+                    "Light": "Ligera",
+                    "Heavy": "Pesada",
+                    "Special": "Especial"
+                },
+                "Name": {
+                    "placeholder": "[Nombre del Arma]"
+                },
+                "Trait": {
+                    "Cumbersome": "Voluminosa",
+                    "Dangerous": "Peligrosa",
+                    "Deadly": "Mortifera",
+                    "Defensive": "Defensiva",
+                    "Discreet": "Discreta",
+                    "Indirect": "Indirecta",
+                    "Loaded": "Cargada",
+                    "Momentum": "Inercia",
+                    "Offhand": "Mano Secundaria",
+                    "Pierce": "Perforante",
+                    "Quickdraw": "Preparacion Rapida",
+                    "Thrown": "Arrojadiza",
+                    "TwoHanded": "A Dos Manos",
+                    "Unique": "Única",
+                    "Fragile": "Frágil",
+                    "Reach": "Alcance"
+                },
+                "Strike": "Golpe",
+                "Improvised": "Arma Improvisada",
+                "Unarmed": "Golpe Desarmado"
+            },
+            "Armor": {
+                "Breastplate": "Peto",
+                "Chain": "Cota de malla",
+                "FullPlate": "Armadura completa",
+                "HalfPlate": "Media armadura",
+                "Leather": "Cuero",
+                "Uniform": "Uniforme",
+                "Name": {
+                    "placeholder": "[Nombre de la Armadura]"
+                },
+                "Trait": {
+                    "Cumbersome": "Voluminosa",
+                    "Dangerous": "Peligrosa",
+                    "Presentable": "Presentable",
+                    "Unique": "Única"
+                },
+                "Deflect": "Desvío"
+            },
+            "Equipment": {
+                "Type": {
+                    "Basic": "Básico"
+                }
+            },
+            "Action": {
+                "Type": {
+                    "Basic": {
+                        "label": "Acción Básica",
+                        "label_plural": "Acciones Básicas"
+                    },
+                    "Ancestry": {
+                        "label": "Acción de Ascendencia",
+                        "label_plural": "Acciones de Ascendencia"
+                    },
+                    "Adversary": {
+                        "label": "Acción de Adversario",
+                        "label_plural": "Acciones de Adversario"
+                    }
+                },
+                "Ancestry": {
+                    "Label": "Identificador de Ascendencia",
+                    "Hint": "Identificador del Ascendencia al que pertenece esta acción. (p. ej. \"humano\")"
+                }
+            },
+            "Goal": {
+                "Level": {
+                    "Label": "Progreso"
+                }
+            },
+            "Power": {
+                "Identifier": {
+                    "Hint": "Usado para identificar de forma única este poder. Debe ser igual al identificador de la habilidad asociada, a menos que se use una habilidad personalizada."
+                },
+                "CustomSkill": {
+                    "Label": "Usar Habilidad Personalizada",
+                    "Hint": "Si está marcado, configura una habilidad personalizada en lugar de la habilidad que coincide con el identificador de este poder."
+                },
+                "Skill": {
+                    "Label": "Habilidad",
+                    "Hint": "La habilidad asociada a este poder. Obtener este poder otorga al personaje acceso a esta habilidad."
+                },
+                "Notification": {
+                    "PowerExists": "Ya existe un poder con el identificador \"{identifier}\" en {actor}."
+                }
+            },
+            "Talent": {
+                "Type": {
+                    "Ancestry": "Ascendencia",
+                    "Path": "Camino",
+                    "Power": "Poder"
+                },
+                "Prerequisite": {
+                    "Type": {
+                        "talent": "Talento",
+                        "attribute": "Atributo",
+                        "skill": "Habilidad",
+                        "connection": "Conexión",
+                        "level": "Nivel",
+                        "ancestry": "Ascendencia",
+                        "culture": "Cultura",
+                        "goal": "Objetivo"
+                    },
+                    "Mode": {
+                        "AnyOf": "Cualquiera de",
+                        "AllOf": "Todos de"
+                    },
+                    "Level": {
+                        "Label": "Nivel"
+                    },
+                    "Ancestry": {
+                        "Label": "Ascendencia"
+                    },
+                    "Culture": {
+                        "Label": "Cultura"
+                    }
+                },
+                "GrantRule": {
+                    "Label": "Al Obtener",
+                    "Hint": "Estas reglas se aplican cuando se obtiene el talento.",
+                    "Type": {
+                        "Items": "Otorgar Objetos",
+                        "Label": "Tipo"
+                    },
+                    "Items": {
+                        "Label": "Objetos"
+                    }
+                },
+                "Power": {
+                    "Label": "Identificador de Poder",
+                    "Hint": "Identificador del poder al que pertenece este talento."
+                }
+            },
+            "TalentTree": {
+                "Width": {
+                    "Label": "Ancho"
+                },
+                "Height": {
+                    "Label": "Alto"
+                },
+                "Interaction": {
+                    "CreateConnection": "Selecciona un talento para conectar."
+                },
+                "ViewBounds": {
+                    "Label": "Límites",
+                    "CaptureTooltip": "Capturar límites de vista actuales",
+                    "ExpandTooltip": "Ver detalles de los límites",
+                    "Origin": {
+                        "Label": "Origen"
+                    },
+                    "Size": {
+                        "Label": "Tamaño"
+                    },
+                    "X": {
+                        "Label": "X"
+                    },
+                    "Y": {
+                        "Label": "Y"
+                    },
+                    "Width": {
+                        "Label": "Ancho"
+                    },
+                    "Height": {
+                        "Label": "Alto"
+                    }
+                },
+                "Display": {
+                    "Label": "Ventana",
+                    "Width": {
+                        "Label": "Ancho"
+                    },
+                    "Height": {
+                        "Label": "Alto"
+                    }
+                },
+                "Background": {
+                    "Label": "Fondo",
+                    "Img": {
+                        "Label": "Imagen"
+                    },
+                    "Size": {
+                        "Label": "Tamaño",
+                        "Width": {
+                            "Label": "Ancho"
+                        },
+                        "Height": {
+                            "Label": "Alto"
+                        }
+                    },
+                    "Position": {
+                        "Label": "Posición",
+                        "X": {
+                            "Label": "X"
+                        },
+                        "Y": {
+                            "Label": "Y"
+                        }
+                    }
+                },
+                "Node": {
+                    "Prerequisites": {
+                        "Label": "Requisitos Previos",
+                        "OneOf": "Uno de",
+                        "CannotEditManaged": "No se puede editar el requisito previo generado por el sistema"
+                    },
+                    "Position": {
+                        "Label": "Posición",
+                        "X": {
+                            "Label": "X"
+                        },
+                        "Y": {
+                            "Label": "Y"
+                        }
+                    }
+                }
+            },
+            "Activation": {
+                "Type": {
+                    "Action": "Acción",
+                    "SkillTest": "Prueba de Habilidad",
+                    "Utility": "Utilitaria"
+                },
+                "ConsumeType": {
+                    "Resource": {
+                        "Label": "Recurso"
+                    },
+                    "Item": {
+                        "Label": "Objeto"
+                    }
+                },
+                "Uses": {
+                    "Types": {
+                        "Charge": {
+                            "Singular": "Carga",
+                            "Plural": "Cargas"
+                        },
+                        "Use": {
+                            "Singular": "Uso",
+                            "Plural": "Usos"
+                        }
+                    },
+                    "Recharge": {
+                        "Label": "Recarga",
+                        "PerScene": "Por escena"
+                    },
+                    "Per": "Por"
+                },
+                "Opportunity": "Umbral de Oportunidad",
+                "Complication": "Umbral de Complicación"
+            },
+            "Injuries": {
+                "Name": {
+                    "placeholder": "[Nombre de la Herida]"
+                },
+                "Duration": {
+                    "FleshWound": "Herida Superficial",
+                    "ShallowInjury": "Herida Leve",
+                    "ViciousInjury": "Herida Grave",
+                    "PermanentInjury": "Herida Permanente",
+                    "Death": "Muerte"
+                }
+            },
+            "Equip": {
+                "Types": {
+                    "Wear": {
+                        "Label": "Equipado"
+                    },
+                    "Hold": {
+                        "Label": "Sosteniendolo"
+                    }
+                },
+                "Hold": {
+                    "OneHanded": {
+                        "Label": "A Una Mano"
+                    },
+                    "TwoHanded": {
+                        "Label": "A Dos Manos"
+                    }
+                },
+                "Hand": {
+                    "Main": {
+                        "Label": "Mano Principal"
+                    },
+                    "Off": {
+                        "Label": "Mano Secundaria"
+                    }
+                },
+                "Equip": {
+                    "Label": "Equipar"
+                },
+                "Unequip": {
+                    "Label": "Desequipar"
+                },
+                "Unequipped": {
+                    "Label": "Desequipado"
+                }
+            },
+            "Modality": {
+                "Label": "Identificador de Modalidad",
+                "Hint": "Identificador de la modalidad a la que pertenece este talento. (p. ej. \"postura\")"
+            },
+            "AttackFlavor": "[actor] ataca con su [item].",
+            "EventSystem": {
+                "Event": {
+                    "Types": {
+                        "create": {
+                            "Label": "Creado",
+                            "Description": "Se activa cuando este objeto es creado, duplicado, añadido a un actor o importado."
+                        },
+                        "update": {
+                            "Label": "Actualizado",
+                            "Description": "Se activa cuando este objeto es actualizado."
+                        },
+                        "delete": {
+                            "Label": "Eliminado",
+                            "Description": "Se activa cuando este objeto es eliminado."
+                        },
+                        "add-to-actor": {
+                            "Label": "Añadido a Actor",
+                            "Description": "Se activa cuando este objeto es añadido a un actor."
+                        },
+                        "remove-from-actor": {
+                            "Label": "Eliminado de Actor",
+                            "Description": "Se activa cuando este objeto es eliminado de un actor."
+                        },
+                        "equip": {
+                            "Label": "Equipado",
+                            "Description": "Se activa cuando este objeto es equipado."
+                        },
+                        "unequip": {
+                            "Label": "Desequipado",
+                            "Description": "Se activa cuando este objeto es desequipado."
+                        },
+                        "use": {
+                            "Label": "Usado",
+                            "Description": "Se activa cuando este objeto es usado/tirado."
+                        },
+                        "mode-activate": {
+                            "Label": "Modalidad Activada",
+                            "Description": "Se activa cuando el modo de este objeto se vuelve activo para su modalidad."
+                        },
+                        "mode-deactivate": {
+                            "Label": "Modalidad Desactivada",
+                            "Description": "Se activa cuando el modo de este objeto se vuelve inactivo para su modalidad."
+                        },
+                        "goal-complete": {
+                            "Label": "Objetivo Completado",
+                            "Description": "Se activa cuando este objetivo es completado."
+                        },
+                        "goal-progress": {
+                            "Label": "Progreso de Objetivo",
+                            "Description": "Se activa cuando el progreso de este objetivo es actualizado hacia su finalización."
+                        },
+                        "update-actor": {
+                            "Label": "Actor Actualizado",
+                            "Description": "Se activa cuando el actor padre de este objeto es actualizado."
+                        },
+                        "apply-damage-actor": {
+                            "Label": "Actor Dañado",
+                            "Description": "Se activa cuando se aplica daño al actor padre de este objeto."
+                        },
+                        "apply-injury-actor": {
+                            "Label": "Actor Herido",
+                            "Description": "Se activa cuando se aplica una herida al actor padre de este objeto."
+                        },
+                        "short-rest-actor": {
+                            "Label": "Actor Descansó (Corto)",
+                            "Description": "Se activa cuando el actor padre de este objeto realiza un descanso corto."
+                        },
+                        "long-rest-actor": {
+                            "Label": "Actor Descansó (Largo)",
+                            "Description": "Se activa cuando el actor padre de este objeto realiza un descanso largo."
+                        }
+                    },
+                    "Rule": {
+                        "Description": {
+                            "Label": "Descripción"
+                        },
+                        "Event": {
+                            "Label": "Desencadenante"
+                        },
+                        "NewRuleDescription": "Nueva Regla"
+                    },
+                    "Handler": {
+                        "Types": {
+                            "grant-expertises": {
+                                "Title": "Otorgar Pericias",
+                                "Description": "Otorga pericias a un actor.",
+                                "Pick": {
+                                    "Label": "El usuario elige",
+                                    "Hint": "Si el usuario debe elegir un número de pericias o si se otorga un conjunto específico de pericias."
+                                },
+                                "PickAmount": {
+                                    "Label": "Cantidad",
+                                    "Hint": "El número máximo de pericias que el usuario puede elegir."
+                                },
+                                "AllowReplacement": {
+                                    "Label": "Permitir Reemplazo",
+                                    "Hint": "Si se permite al usuario reemplazar una pericia otorgada si ya la tiene."
+                                },
+                                "AvailableTypes": {
+                                    "Label": "Categorías Disponibles",
+                                    "Hint": "Las categorías de pericias disponibles para elegir."
+                                },
+                                "ReplaceExpertise": {
+                                    "Title": "Elige otra Pericia",
+                                    "Button": "Elegir"
+                                },
+                                "PickDialog": {
+                                    "Title": "Elige {amount} Pericias",
+                                    "Button": "Elegir"
+                                }
+                            },
+                            "grant-items": {
+                                "Title": "Otorgar Objetos",
+                                "Description": "Otorga objetos a un actor.",
+                                "AllowDuplicates": {
+                                    "Label": "Permitir Duplicados",
+                                    "Hint": "Si se otorgan objetos al actor aunque ya los tenga."
+                                },
+                                "IncreaseQuantity": {
+                                    "Label": "Aumentar Cantidad",
+                                    "Hint": "Si se aumenta la cantidad de objetos físicos si el actor ya los tiene."
+                                },
+                                "PickOne": {
+                                    "Label": "Elegir Uno",
+                                    "Hint": "Si se debe pedir al usuario que elija un objeto de la lista. Si no está activado, se otorgarán todos los objetos."
+                                },
+                                "PickPromptTitle": {
+                                    "Label": "Título del Mensaje de Elección",
+                                    "Hint": "El título del mensaje mostrado al elegir un objeto.",
+                                    "Default": "Elegir Objeto"
+                                },
+                                "Notify": {
+                                    "Label": "Notificar al Usuario",
+                                    "Hint": "Si se envía una notificación al usuario por cada objeto otorgado."
+                                },
+                                "Items": {
+                                    "Label": "Objetos"
+                                }
+                            },
+                            "modify-attribute": {
+                                "Title": "Modificar Atributo",
+                                "Description": "Modifica un atributo de un actor.",
+                                "Attribute": {
+                                    "Label": "Atributo"
+                                },
+                                "Amount": {
+                                    "Label": "Cantidad",
+                                    "Hint": "La cantidad a modificar el atributo. Puede ser positiva o negativa."
+                                },
+                                "Bonus": {
+                                    "Label": "Modificar Bonificación",
+                                    "Hint": "Si se modifica la bonificación del atributo en lugar del atributo en sí."
+                                }
+                            },
+                            "modify-skill-rank": {
+                                "Title": "Modificar Rango de Habilidad",
+                                "Description": "Modifica el rango de una habilidad de un actor.",
+                                "Skill": {
+                                    "Label": "Habilidad"
+                                },
+                                "Amount": {
+                                    "Label": "Cantidad",
+                                    "Hint": "La cantidad a modificar el rango de habilidad. Puede ser positiva o negativa."
+                                }
+                            },
+                            "remove-expertises": {
+                                "Title": "Eliminar Pericias",
+                                "Description": "Elimina pericias de un actor."
+                            },
+                            "remove-items": {
+                                "Title": "Eliminar Objetos",
+                                "Description": "Elimina objetos de un actor.",
+                                "ReduceQuantity": {
+                                    "Label": "Reducir Cantidad",
+                                    "Hint": "Si se reduce la cantidad de objetos físicos en lugar de eliminarlos directamente.\nLos objetos reducidos a cantidad 0 serán eliminados."
+                                },
+                                "Amount": {
+                                    "Label": "Cantidad",
+                                    "Hint": "La cantidad a eliminar. Solo se usa si \"Reducir Cantidad\" está activado y el objeto es físico."
+                                },
+                                "Items": {
+                                    "Label": "Objetos"
+                                }
+                            },
+                            "set-attribute": {
+                                "Title": "Establecer Atributo",
+                                "Description": "Establece el valor de un atributo de un actor.",
+                                "Attribute": {
+                                    "Label": "Atributo"
+                                },
+                                "Value": {
+                                    "Label": "Valor",
+                                    "Hint": "El valor al que se establecerá el atributo."
+                                },
+                                "Bonus": {
+                                    "Label": "Establecer Bonificación",
+                                    "Hint": "Si se establece la bonificación del atributo en lugar del atributo en sí."
+                                }
+                            },
+                            "set-skill-rank": {
+                                "Title": "Establecer Rango de Habilidad",
+                                "Description": "Establece el rango de una habilidad de un actor.",
+                                "Skill": {
+                                    "Label": "Habilidad"
+                                },
+                                "Value": {
+                                    "Label": "Valor",
+                                    "Hint": "El valor al que se establecerá el rango de habilidad."
+                                }
+                            },
+                            "use-item": {
+                                "Title": "Usar objeto",
+                                "Description": "Usa un objeto tirándolo.",
+                                "Target": {
+                                    "Label": "Objetivo",
+                                    "Choices": {
+                                        "self": "Uno mismo",
+                                        "sibling": "Otro en el mismo Actor",
+                                        "global": "Global"
+                                    }
+                                },
+                                "UUID": {
+                                    "Label": "Objeto"
+                                },
+                                "FastForward": {
+                                    "Label": "Avance Rápido",
+                                    "Hint": "Si se omite el diálogo de tirada para la tirada."
+                                },
+                                "AdvantageMode": {
+                                    "Label": "Modo de Ventaja"
+                                },
+                                "TemporaryDamageModifiers": {
+                                    "Label": "Bonificación de Daño",
+                                    "Hint": "Fórmula de bonificación de daño a aplicar a la tirada. Solo para objetos que pueden tirar daño."
+                                }
+                            },
+                            "update-actor": {
+                                "Title": "Actualizar Actor",
+                                "Description": "Actualiza un actor aplicando un conjunto de cambios.",
+                                "Target": {
+                                    "Label": "Objetivo",
+                                    "Hint": "El actor objetivo a actualizar. Si no se especifica, se usará el actor padre del objeto.",
+                                    "Choices": {
+                                        "parent": "Actor Padre",
+                                        "global": "Global"
+                                    }
+                                },
+                                "UUID": {
+                                    "Label": "Actor"
+                                },
+                                "Changes": {
+                                    "Label": "Cambios"
+                                }
+                            },
+                            "update-item": {
+                                "Title": "Actualizar Objeto",
+                                "Description": "Actualiza un objeto aplicando un conjunto de cambios.",
+                                "Target": {
+                                    "Label": "Objetivo",
+                                    "Choices": {
+                                        "self": "Uno mismo",
+                                        "sibling": "Otro en el mismo Actor",
+                                        "global": "Global"
+                                    }
+                                },
+                                "UUID": {
+                                    "Label": "Objeto"
+                                },
+                                "MatchMode": {
+                                    "Label": "Modo de Coincidencia",
+                                    "Hint": "Cómo hacer coincidir el objeto a actualizar.\nIdentificador coincide por el identificador establecido en Detalles.\nNombre coincide por nombre exacto, distingue mayúsculas.\nUUID coincide solo el objeto exacto.",
+                                    "Choices": {
+                                        "identifier": "Identificador",
+                                        "name": "Nombre",
+                                        "uuid": "UUID"
+                                    }
+                                },
+                                "MatchAll": {
+                                    "Label": "Coincidir Todos",
+                                    "Hint": "Si se hace coincidir todos los objetos o solo el primero encontrado."
+                                },
+                                "Changes": {
+                                    "Label": "Cambios"
+                                }
+                            },
+                            "execute-macro": {
+                                "Title": "Ejecutar Macro",
+                                "Description": "Ejecuta una macro.",
+                                "MacroType": {
+                                    "Label": "Tipo de Macro"
+                                },
+                                "Inline": {
+                                    "Label": "Inline"
+                                },
+                                "UUID": {
+                                    "Label": "Macro"
+                                }
+                            }
+                        },
+                        "General": {
+                            "Target": {
+                                "Label": "Objetivo",
+                                "Choices": {
+                                    "self": "Uno mismo",
+                                    "sibling": "Otro en el mismo Actor",
+                                    "equipped-weapon": "Arma Equipada",
+                                    "equipped-armor": "Armadura Equipada",
+                                    "global": "Global"
+                                }
+                            },
+                            "MatchMode": {
+                                "Label": "Modo de Coincidencia",
+                                "Hint": "Cómo hacer coincidir el objeto.\nIdentificador coincide por el identificador establecido en Detalles.\nNombre coincide por nombre exacto, distingue mayúsculas.\nUUID coincide solo el objeto exacto.",
+                                "Choices": {
+                                    "identifier": "Identificador",
+                                    "name": "Nombre",
+                                    "uuid": "UUID"
+                                }
+                            },
+                            "MatchAll": {
+                                "Label": "Coincidir Todos",
+                                "Hint": "Si se hace coincidir todos los objetos o solo el primero encontrado."
+                            }
+                        }
+                    }
+                },
+                "Notification": {
+                    "ExceededMaxDepth": "Se superó la profundidad máxima de cadena de eventos. Abortando ejecución de evento.",
+                    "RecentEventsExceeded": "Se superó el número máximo de eventos \"{eventType}\" en un corto período. Abortando ejecución de evento."
+                }
+            },
+            "Sheet": {
+                "Basics": "Básico",
+                "Tabs": {
+                    "Description": "Descripción",
+                    "Effects": "Efectos",
+                    "Details": "Detalles",
+                    "Talents": "Talentos",
+                    "Events": "Eventos"
+                },
+                "Identifier": {
+                    "Label": "Identificador",
+                    "Hint": "Usado para identificar de forma única este {type}. El identificador solo puede contener letras (a-z), números (0-9), guiones (-) y guiones bajos (_)."
+                },
+                "Type": "Tipo",
+                "Injury": {
+                    "Duration": "Duración",
+                    "InitialDuration": "Inicial",
+                    "RemainingDuration": "Restante"
+                },
+                "Ancestry": {
+                    "Size": "Tamaño",
+                    "Advancement": "Avance",
+                    "FreePath": "Camino Gratuito",
+                    "FreeTalents": "Talentos Gratuitos",
+                    "BonusTalents": "Talentos Adicionales",
+                    "Restrictions": "Restricciones",
+                    "PathReferencePlaceholder": "Arrastra un Camino aquí para establecer el Camino Gratuito",
+                    "TalentIdDescription": "La columna de identificador debe contener el identificador del talento que quieres que los personajes con este Ascendencia tengan acceso. El identificador del camino solo puede contener letras (a-z), números (0-9), guiones (-) y guiones bajos (_).",
+                    "Component": {
+                        "AdvancementTalentList": {
+                            "DropTalent": "Arrastra un Talento aquí para añadirlo a la lista",
+                            "Warning": {
+                                "WrongType": "El Documento arrastrado debe ser de tipo Talento"
+                            }
+                        },
+                        "BonusTalents": {
+                            "Add": "Nueva Regla"
+                        }
+                    }
+                },
+                "Specialty": {
+                    "PathId": "Identificador de Camino",
+                    "PathIdDescription": "El identificador del camino al que pertenece esta especialidad. El identificador del camino solo puede contener letras (a-z), números (0-9), guiones (-) y guiones bajos (_)."
+                },
+                "Loot": {
+                    "IsMoney": "Es Dinero",
+                    "IsMoneyDescription": "¿Es este botín una forma de moneda?"
+                },
+                "Properties": {
+                    "Quantity": "Cantidad",
+                    "Weight": "Peso",
+                    "Price": "Precio"
+                },
+                "Equip": {
+                    "Title": "Detalles de Equipo",
+                    "AlwaysEquipped": "Siempre Equipado",
+                    "Traits": "Rasgos",
+                    "ExpertTraits": "Rasgos de Experto",
+                    "LoseTrait": "Pierde [trait]",
+                    "ModifyTraitValue": "[trait] [[value]] >",
+                    "ModifyTraitValueFull": "[trait] [[value]] > [[newValue]]",
+                    "ViewTraits": "Ver Rasgos"
+                },
+                "Armor": {
+                    "DeflectedTypes": "Tipos de Daño Deflectados",
+                    "ViewDeflected": "Ver Tipos Deflectados"
+                },
+                "Activation": {
+                    "Title": "Uso",
+                    "Type": "Tipo de Activación",
+                    "Cost": "Coste de Activación",
+                    "Consume": "Consumo de Recurso",
+                    "Uses": "Usos Limitados",
+                    "Recharge": "Recarga",
+                    "AdditionalFormula": "Extensión de Fórmula de Tirada",
+                    "AdditionalFormulaDescription": "Introduce cualquier modificador extra que desees añadir a la tirada de Habilidad d20 de este objeto. Esta entrada se tratará como una fórmula de dados, pero los dados que añadas no estarán disponibles para ventaja/desventaja actualmente. Parámetros disponibles: @mod, @attribute y @skill.rank hacen referencia a los valores de las habilidades seleccionadas, pero se puede acceder a la lista completa de habilidades y atributos. ¡Pregunta en el discord si necesitas ayuda!"
+                },
+                "Attack": {
+                    "Title": "Ataque",
+                    "Type": "Tipo de Ataque",
+                    "Range": "Alcance",
+                    "RangeShort": "Corto",
+                    "RangeLong": "Largo"
+                },
+                "Damage": {
+                    "Title": "Daño",
+                    "Formula": "Fórmula de Daño",
+                    "GrazeOverride": "Anular Cálculo de Daño de Roce",
+                    "GrazeFormula": "Nueva Fórmula",
+                    "GrazeHint": "La fórmula introducida aquí será la totalidad del cálculo para el daño de roce. Las tiradas de dados se tirarán por separado de la tirada de daño principal. Puedes usar parte o todo el resultado principal usando @damage.total/@damage.unmodded/@damage.dice (este último es el predeterminado del sistema) o el modificador de atributo seleccionado con @mod.",
+                    "ViewGraze": "Ver Anulación de Roce"
+                },
+                "Modality": {
+                    "Title": "Modalidad",
+                    "HasModality": "Tiene Modalidad"
+                },
+                "Talent": {
+                    "PathId": "Identificador de Camino",
+                    "PathIdPlaceholder": "Identificador de Camino",
+                    "PathIdDescription": "El identificador del camino al que pertenece este talento.",
+                    "SpecialtyId": "Identificador de Especialidad",
+                    "SpecialtyIdPlaceholder": "Identificador de Especialidad — Opcional",
+                    "SpecialtyIdDescription": "El identificador de la especialidad a la que pertenece este talento.",
+                    "AncestryId": "Identificador de Ascendencia",
+                    "AncestryIdPlaceholder": "Identificador de Ascendencia",
+                    "AncestryIdDescription": "El identificador del Ascendencia al que pertenece este talento.",
+                    "Prerequisites": {
+                        "Label": "Requisitos Previos",
+                        "Type": "Tipo",
+                        "Description": "Descripción",
+                        "Create": "Nuevo Requisito",
+                        "Edit": "Editar requisito",
+                        "Delete": "Eliminar requisito",
+                        "TalentId": "Identificador de Talento",
+                        "TalentIdPlaceholder": "Identificador de Talento",
+                        "Attribute": "Atributo",
+                        "AttributeValue": "Valor",
+                        "AttributeValuePlaceholder": "Valor Mínimo de Atributo",
+                        "Skill": "Habilidad",
+                        "SkillRank": "Rango",
+                        "SkillRankPlaceholder": "Rango Mínimo de Habilidad",
+                        "Connection": "Conexión",
+                        "ConnectionDescription": "Descripción",
+                        "ConnectionDescriptionPlaceholder": "Descripción de Conexión",
+                        "DropTalents": "Arrastra Talentos aquí para añadirlos a la lista.",
+                        "DropGoals": "Arrastra Objetivos aquí para añadirlos a la lista."
+                    },
+                    "GrantRules": {
+                        "Description": "Descripción",
+                        "Create": "Nueva regla",
+                        "Edit": "Editar regla",
+                        "Delete": "Eliminar regla"
+                    }
+                },
+                "TalentTree": {
+                    "View": "Ver"
+                },
+                "Path": {
+                    "TalentTreePlaceholder": "Arrastra un Árbol de Talentos aquí",
+                    "NoTalentsConfigured": "No hay Talentos Configurados"
+                },
+                "TalentsProvider": {
+                    "Title": "Talentos",
+                    "TalentTree": {
+                        "Label": "Árbol de Talentos",
+                        "Hint": "Árbol de talentos que contiene todos los talentos para este camino. Este árbol se muestra en la pestaña \"talentos\"."
+                    }
+                },
+                "EventsList": {
+                    "Description": "Descripción",
+                    "Trigger": "Desencadenante",
+                    "Handler": "Manejador",
+                    "Create": "Añadir regla de evento"
+                }
+            },
+            "General": {
+                "LinkedSkills": {
+                    "Label": "Habilidades Vinculadas",
+                    "Hint": "Estas habilidades se muestran junto al {type} en la hoja de personaje."
+                }
+            }
+        },
+        "Attack": {
+            "Type": {
+                "Melee": "Cuerpo a Cuerpo",
+                "Ranged": "A Distancia"
+            }
+        },
+        "DamageTypes": {
+            "Energy": "Energía",
+            "Impact": "Impacto",
+            "Keen": "Filo",
+            "Spirit": "Espíritu",
+            "Vital": "Vital",
+            "Healing": "Curación"
+        },
+        "Paths": {
+            "Types": {
+                "Heroic": {
+                    "Label": "Heroico"
+                }
+            }
+        },
+        "Currencies": {},
+        "Combat": {
+            "FastPlayers": "Personajes Rápidos",
+            "SlowPlayers": "Personajes Lentos",
+            "FastAdversaries": "Adversarios Rápidos",
+            "SlowAdversaries": "Adversarios Lentos",
+            "ToggleTurn": "Cambiar Velocidad de Turno",
+            "ResetActivation": "Reiniciar Activación",
+            "Activate": "Marcar como Actuado"
+        },
+        "Culture": {
+            "Alethi": "Alezi",
+            "Azish": "Azishiano",
+            "Herdazian": "Herdaziano",
+            "Thaylen": "Thayleño",
+            "Unkalaki": "Unkalaki",
+            "Veden": "Veden"
+        },
+        "Status": {
+            "Afflicted": "Afligido",
+            "Blind": "Ciego",
+            "Burrowing": "Excavando",
+            "Determined": "Determinado",
+            "Disoriented": "Desorientado",
+            "Empowered": "Empoderado",
+            "Enhanced": "Potenciado",
+            "Exhausted": "Exhausto",
+            "Flying": "Volando",
+            "Focused": "Concentrado",
+            "Hidden": "Oculto",
+            "Immobilized": "Inmovilizado",
+            "Invisible": "Invisible",
+            "Prone": "Derribado",
+            "Restrained": "Retenido",
+            "Slowed": "Ralentizado",
+            "Stunned": "Aturdido",
+            "Surprised": "Sorprendido",
+            "Unconscious": "Inconsciente",
+            "Dead": "Muerto"
+        },
+        "Sheet": {
+            "Descriptions": {
+                "DescriptionHeader": "Descripción",
+                "ShortHeader": "Descripción Corta",
+                "ChatHeader": "Descripción de Chat",
+                "Collapsible": "Alternar Desplegable",
+                "Edit": "Editar Descripción"
+            },
+            "Effects": {
+                "Label": "Efectos",
+                "Inactive": "Efectos Inactivos",
+                "Passive": "Efectos Pasivos",
+                "Temporary": "Efectos Temporales",
+                "Source": "Fuente",
+                "Enable": "Activar Efecto",
+                "Disable": "Desactivar Efecto",
+                "Duration": "Duración",
+                "Create": "Nuevo Efecto",
+                "Edit": "Editar Efecto",
+                "Delete": "Eliminar Efecto",
+                "ToggleActive": "Alternar Activo"
+            },
+            "Talents": {
+                "Label": "Talentos",
+                "AtLevel": "En Nivel",
+                "Add": "Nuevo Talento",
+                "Edit": "Editar Talento",
+                "Delete": "Eliminar Talento",
+                "Cancel": "Descartar Cambios",
+                "Submit": "Finalizar Edición"
+            },
+            "TalentPicks": {
+                "Edit": "Editar",
+                "Delete": "Eliminar",
+                "Cancel": "Descartar Cambios",
+                "Submit": "Finalizar Edición"
+            }
+        },
+        "Attribute": {
+            "str": "Fuerza",
+            "spd": "Velocidad",
+            "int": "Intelecto",
+            "wil": "Voluntad",
+            "awa": "Percepcion",
+            "pre": "Presencia"
+        },
+        "Skill": {
+            "agi": "Agilidad",
+            "ath": "Atletismo",
+            "hwp": "Armamento Pesado",
+            "lwp": "Armamento Ligero",
+            "stl": "Sigilo",
+            "thv": "Hurto",
+            "cra": "Manufactura",
+            "ded": "Deducción",
+            "dis": "Disciplina",
+            "inm": "Intimidación",
+            "lor": "Saber",
+            "med": "Medicina",
+            "dec": "Engaño",
+            "ins": "Perspicacia",
+            "lea": "Liderazgo",
+            "prc": "Percepcion",
+            "prs": "Persuasión",
+            "sur": "Supervivencia"
+        },
+        "ChatMessage": {
+            "Buttons": {
+                "DamageFull": "Clic para aplicar daño completo a los tokens seleccionados.",
+                "DamageHalf": "Clic para aplicar la mitad del daño a los tokens seleccionados.",
+                "DamageDouble": "Clic para aplicar el doble de daño a los tokens seleccionados.",
+                "Healing": "Clic para aplicar curación a los tokens seleccionados.",
+                "ReduceFocus": "Clic para reducir la concentración de los tokens seleccionados.",
+                "RollCrit": "Clic para tirar daño crítico.",
+                "RollAdvantage": "Clic para tirar con ventaja.",
+                "RollDisadvantage": "Clic para tirar con desventaja.",
+                "ApplyInjury": "Clic para aplicar herida al personaje.",
+                "UndoDamage": "Clic para deshacer el daño recibido.",
+                "UndoHealing": "Clic para deshacer la curación."
+            },
+            "Trays": {
+                "Targets": "Objetivos"
+            },
+            "InjuryRoll": "Tirada de Herida",
+            "InjuryDuration": {
+                "Dead": "{actor} ha <strong>muerto</strong>.",
+                "Permanent": "{actor} está <strong>herido permanentemente</strong>.",
+                "Temporary": "{actor} está herido durante <strong>{days} días</strong>."
+            },
+            "ApplyDamage": "{actor} recibe <strong>{amount} de daño</strong>.",
+            "ApplyHealing": "{actor} recupera <strong>{amount} de salud</strong>.",
+            "ModifierDialog": {
+                "DamageTitle": "Modificar Daño",
+                "HealingTitle": "Modificar Curación",
+                "FocusTitle": "Modificar Pérdida de Concentración"
+            },
+            "DamageCalculation": "Cálculo de Daño: {calculation}",
+            "ViewRollsDetails": "Detalles de Tirada",
+            "Welcome": "<h2>¡Bienvenido al Cosmere RPG!</h2> <p>¡Gracias por usar el sistema <strong>Cosmere Roleplaying Game</strong> desarrollado por la comunidad! Estás ejecutando la versión <strong>{version}</strong>.</p> <p>Para noticias, soporte o conectar con otros jugadores y desarrolladores, únete a nosotros en el <a href=\"{discordLink}\">Discord de Metalworks</a>.</p> <p>Si encuentras algún problema o tienes sugerencias de mejora, infórmanos a través de nuestra <a href=\"{issuesLink}\">página de Issues en GitHub</a> o contactando en Discord. ¿Interesado en contribuir? Consulta nuestras <a href=\"{contributingLink}\">directrices de contribución</a>.</p> <p>¡Esperamos que disfrutes tu viaje por el Cosmere!</p>"
+        },
+        "Theme": {
+            "Default": "Cosmere"
+        },
+        "Damage": {
+            "IgnoreDeflect": "Ignorar Desvío"
+        },
+        "Migration": {
+            "DocumentMigrationFailed": "Error al migrar {type} \"{name}\". {error}"
+        }
+    },
+    "DICE": {
+        "RollMode": "Modo de Tirada",
+        "Plot": {
+            "Die": "Dado de Trama",
+            "RaiseTheStakes": "Aumentar las Apuestas",
+            "Complication": "Complicación",
+            "Opportunity": "Oportunidad"
+        },
+        "AdvantageMode": {
+            "None": "Ninguno",
+            "Advantage": "Ventaja",
+            "Disadvantage": "Desventaja"
+        },
+        "Damage": {
+            "Label": "Daño",
+            "Apply": "Aplicar",
+            "Graze": "Roce",
+            "Full": "Completo"
+        },
+        "TemporaryBonus": {
+            "Label": "Bonificación Temporal",
+            "Hint": "Introduce una fórmula opcional para aplicar como modificador temporal a esta prueba de habilidad."
+        }
+    },
+    "ROLLS": {
+        "Recovery": "[character] tira su dado de recuperación.",
+        "RecoveryTend": "Atendido por [tender]."
+    },
+    "DIALOG": {
+        "ItemConsume": {
+            "Title": "Consumir Recurso",
+            "ShouldConsume": {
+                "None": "Ninguno",
+                "Static": "¿Consumir {amount} {resource}?",
+                "RangeCapped": "Consumir {min}-{max} {resource}:",
+                "RangeUncapped": "Consumir {amount} o más {resource}:"
+            }
+        },
+        "EditExpertise": {
+            "Remove": "Eliminar",
+            "Add": "Añadir Pericia Personalizada",
+            "AddPlaceholder": "Pericia Personalizada",
+            "Warning": {
+                "MaxExpertises": "Solo se pueden seleccionar hasta {max} pericias."
+            }
+        },
+        "ConfigureResource": {
+            "Title": "Configurar Máximo de {resource}: {actor}"
+        },
+        "LongRest": {
+            "ShouldPerform": "¿Realizar Descanso Largo?"
+        },
+        "ShortRest": {
+            "Title": "Descanso Corto",
+            "TendedToBy": "Atendido por"
+        },
+        "ConfigureDefense": {
+            "Title": "Configurar Defensa de {attribute-group}: {actor}"
+        },
+        "ConfigureMovementRate": {
+            "Title": "Configurar Velocidad de Movimiento: {actor}"
+        },
+        "ConfigureSensesRange": {
+            "Title": "Configurar Alcance de Sentidos: {actor}",
+            "IgnoreObscure": "Ignora Oscurecido"
+        },
+        "ConfigureRecoveryDie": {
+            "Title": "Configurar Dado de Recuperación: {actor}"
+        },
+        "ConfigureDeflect": {
+            "Title": "Configurar Desvío: {actor}"
+        },
+        "EditTalentPrerequisite": {
+            "Title": "Editar Requisito Previo"
+        },
+        "ConfigureRoll": {
+            "Title": "Configurar Tiradas",
+            "Hint": "Clic izquierdo o clic derecho en cualquier dado individual para aplicar ventaja o desventaja respectivamente."
+        },
+        "ConfigureAttack": {
+            "AdvantageMode": {
+                "Title": "Modo de Ventaja",
+                "Field": {
+                    "Type": "Tipo",
+                    "Dice": "Dados"
+                }
+            }
+        },
+        "EditBonusTalentsRule": {
+            "Title": "Editar Regla de Talentos Adicionales",
+            "Quantity": "Cantidad",
+            "Warning": {
+                "DuplicateLevel": "Ya existe una regla para el nivel {level}"
+            }
+        },
+        "ReleaseNotes": {
+            "Title": "Cosmere Roleplaying Game - Notas de Versión"
+        },
+        "ConfigureTalentTree": {
+            "Title": "Configurar Árbol de Talentos: {name}",
+            "Warning": {
+                "OutOfBounds": "Los límites seleccionados colocarían al menos un talento fuera del árbol."
+            },
+            "Notification": {}
+        },
+        "PickDiceResult": {
+            "Title": "Elegir Resultado",
+            "Header": "Por Elegir:",
+            "SelectRoll": "Seleccionar Tirada",
+            "Error": {
+                "TooManyPicked": "¡No se pueden elegir más de {max} tirada(s)!"
+            }
+        },
+        "EditEventRule": {
+            "Title": "Editar Regla de Evento"
+        }
+    },
+    "COMPONENT": {
+        "DocumentReferenceInput": {
+            "Placeholder": "Arrastra {type} aquí para crear referencia",
+            "Warning": {
+                "WrongType": "El Documento arrastrado debe ser de tipo {type}",
+                "WrongSubtype": "El {type} arrastrado debe ser de tipo {subtype}"
+            }
+        },
+        "DocumentDropListComponent": {
+            "Placeholder": "Arrastra {type} aquí para añadir a la lista",
+            "Warning": {
+                "DocumentAlreadyInList": "El {type} arrastrado ya está en la lista",
+                "WrongType": "El Documento arrastrado debe ser de tipo {type}",
+                "WrongSubtype": "El {type} arrastrado debe ser de tipo {subtype}"
+            }
+        },
+        "MultiValueSelect": {
+            "DefaultPlaceholder": "Seleccionar Opción"
+        },
+        "DocumentChangesList": {
+            "Header": {
+                "Key": "Clave de Atributo",
+                "Mode": "Cambiar Modo",
+                "Value": "Valor"
+            },
+            "Add": "Añadir Cambio",
+            "Remove": "Eliminar Cambio"
+        }
+    },
+    "GENERIC": {
+        "Unknown": "Desconocido",
+        "None": "Ninguno",
+        "Custom": "Personalizado",
+        "Default": "Predeterminado",
+        "Document": "Documento",
+        "Formula": "Fórmula",
+        "Value": "Valor",
+        "Modifier": "Modificador",
+        "DC": "CD",
+        "Skill": "Habilidad",
+        "Attribute": "Atributo",
+        "SkillTest": "Prueba de Habilidad",
+        "Test": "Prueba",
+        "Plot": "Trama",
+        "Damage": "Daño",
+        "Healing": "Curación",
+        "Immune": "Inmune",
+        "Condition": "Condición",
+        "Cost": "Coste",
+        "Configure": "Configurar",
+        "DistanceUnit": "m",
+        "ViewDetails": "Ver Detalles",
+        "HideDetails": "Ocultar Detalles",
+        "Bonus": "Bonificación",
+        "Mode": "Modo",
+        "Turns": "Turnos",
+        "Rounds": "Rondas",
+        "Clear": "Limpiar",
+        "Name": "Nombre",
+        "Image": "Imagen",
+        "Level": "Nivel",
+        "Add": "Añadir",
+        "Type": "Tipo",
+        "Description": "Descripción",
+        "Talent": "Talento",
+        "Goal": "Objetivo",
+        "Button": {
+            "Roll": "Tirar",
+            "Continue": "Continuar",
+            "Remove": "Eliminar",
+            "Edit": "Editar",
+            "Save": "Guardar",
+            "Cancel": "Cancelar",
+            "Update": "Actualizar",
+            "RemoveFavorite": "Quitar de Favoritos",
+            "Favorite": "Favorito",
+            "Confirm": "Confirmar"
+        },
+        "Notification": {
+            "GrazeFocusSpent": "Concentración reducida en 1",
+            "AddedItem": "Se añadió {item}{quantity} a {actor}",
+            "IncreasedSkillRank": "Se aumentó el rango de {skill} de {actor} en {amount}",
+            "TalentObtained": "Se añadió el talento {talent} a {actor}",
+            "TalentRemoved": "Se eliminó el talento {talent} de {actor}",
+            "TalentCannotBeRemoved": "No se puede eliminar el talento {talent} de {actor} ya que es un requisito previo para otro talento"
+        },
+        "Warning": {
+            "NotImplemented": "¡Lo sentimos! [action] aún no está implementado",
+            "NoActor": "No se encontró actor seleccionado o asignado para esta tirada",
+            "NotEnoughResource": "No se puede consumir, no hay suficiente recurso",
+            "NotEnoughUses": "No se puede consumir, no quedan suficientes usos",
+            "ItemConsumeResourceNotConfigured": "El recurso seleccionado para consumir no está configurado en este objeto",
+            "NoDuplicateExpertises": "No se puede crear una pericia duplicada",
+            "NoFocus": "No hay suficiente concentración para realizar esta acción",
+            "TalentCannotBePrerequisiteOfItself": "Un talento no puede ser su propio requisito previo",
+            "DuplicatePrerequisiteTalentRef": "Ya existe un talento con id {talentId} ({talentName})",
+            "ItemAlreadyInTree": "Ya existe un objeto con id \"{itemId}\" en el árbol de talentos {name}",
+            "ActorConditionImmune": "{actor} es inmune a {condition}"
+        },
+        "Error": {
+            "RegisteringConfigs": "Error al registrar configuraciones. Consulta la consola para más detalles (F12)."
+        },
+        "Enrichers": {
+            "Test": {
+                "Against": "contra",
+                "VsDefense": "contra la defensa del objetivo",
+                "NoSkill": "No se proporcionó Habilidad"
+            },
+            "Damage": {
+                "NoFormula": "No se proporcionó Fórmula ni Términos de Dados",
+                "NoType": "No se proporcionó Tipo de Daño",
+                "DoubleType": "Tipo de Daño definido más de una vez",
+                "BadType": "Tipo de Daño no compatible"
+            },
+            "Lookup": {
+                "NoPath": "No se proporcionó Ruta de Búsqueda"
+            },
+            "Error": "ERROR DE ENRIQUECEDOR"
+        },
+        "DerivedValue": {
+            "Mode": {
+                "Derived": "Derivado",
+                "Override": "Personalizado"
+            }
+        },
+        "Units": {
+            "Days": "Días"
+        }
+    },
+    "TYPES": {
+        "Actor": {
+            "character": "Personaje",
+            "adversary": "Adversario"
+        },
+        "Item": {
+            "culture": "Cultura",
+            "ancestry": "Ascendencia",
+            "path": "Camino",
+            "connection": "Conexión",
+            "goal": "Objetivo",
+            "injury": "Herida",
+            "specialty": "Especialidad",
+            "loot": "Botín",
+            "armor": "Armadura",
+            "trait": "Característica de Adversario",
+            "action": "Acción",
+            "talent": "Talento",
+            "equipment": "Equipo",
+            "weapon": "Arma",
+            "power": "Poder",
+            "talent_tree": "Árbol de Talentos"
+        }
+    },
+    "UNITS": {
+        "Distance": {
+            "Feet": "Metros"
+        }
+    },
+    "SETTINGS": {
+        "skipRollDialogByDefault": {
+            "name": "Omitir Diálogo de Tirada por Defecto",
+            "hint": "Si está activado, las tiradas omitirán el diálogo de configuración al hacer clic, usando la configuración de tirada predeterminada. Aún se puede acceder al diálogo manteniendo pulsada la tecla modificadora 'Omitir/Mostrar Diálogo' en los controles del sistema."
+        },
+        "skipDamageModDialogByDefault": {
+            "name": "Omitir Diálogo de Modificador de Daño por Defecto",
+            "hint": "Si está activado, la tarjeta de daño/curación en el chat omitirá el diálogo de modificador al hacer clic, usando el valor mostrado en la tarjeta directamente. Aún se puede acceder al diálogo manteniendo pulsada la tecla modificadora 'Omitir/Mostrar Diálogo' en los controles del sistema."
+        },
+        "enableOverlayButtons": {
+            "name": "Activar Botones Superpuestos",
+            "hint": "Al mostrar una prueba de habilidad o tirada de daño, activa botones superpuestos en el mensaje de chat que ofrecen funcionalidad adicional para la tirada."
+        },
+        "enableApplyButtons": {
+            "name": "Activar Botones de Aplicar",
+            "hint": "Al mostrar una tirada de daño, activa botones en el mensaje de chat que permiten aplicar daño o curación a tokens, o reducir la concentración de dichos tokens."
+        },
+        "alwaysShowApplyButtons": {
+            "name": "Mostrar Siempre los Botones de Aplicar",
+            "hint": "Al mostrar una tirada de daño, mostrar siempre los botones de aplicar, en lugar de solo al pasar el ratón por encima."
+        },
+        "applyButtonsTo": {
+            "name": "Opciones de Botón de Aplicar",
+            "hint": "Determina a qué tokens se aplica el daño, curación o reducción de concentración al usar los botones de la tarjeta de chat.",
+            "choices": {
+                "SelectedOnly": "Aplicar a Tokens Seleccionados",
+                "TargetedOnly": "Aplicar a Tokens Objetivo",
+                "SelectedAndTargeted": "Aplicar a Ambos",
+                "PrioritiseSelected": "Priorizar Tokens Seleccionados",
+                "PrioritiseTargeted": "Priorizar Tokens Objetivo"
+            }
+        },
+        "expandDescriptionByDefault": {
+            "name": "Expandir Descripción del Objeto por Defecto",
+            "hint": "Determina si la sección de descripción de un objeto debe estar expandida por defecto al abrir la hoja del objeto."
+        },
+        "skillIncrementDecrementToggle": {
+            "name": "Activar Comportamiento de Incremento de Pips de Habilidad",
+            "hint": "Determina si los pips de habilidad aumentan/disminuyen con clic izquierdo o clic derecho, en lugar de establecerse al rango del pip clicado."
+        },
+        "systemTheme": {
+            "name": "Tema del Sistema Preferido",
+            "hint": "Especifica el conjunto de colores temáticos a usar para los documentos e interfaz del sistema. El tema seleccionado respetará el modo Oscuro/Claro preferido seleccionado en la configuración central."
+        }
+    },
+    "KEYBINDINGS": {
+        "skipDialogDefault": "Omitir/Mostrar Diálogo",
+        "skipDialogAdvantage": "Omitir Diálogo con Ventaja",
+        "skipDialogDisadvantage": "Omitir Diálogo con Desventaja",
+        "skipDialogRaiseStakes": "Omitir Diálogo con Aumentar Apuestas",
+        "changeQuantity5": "Aumentar/Reducir Cantidad en 5",
+        "changeQuantity10": "Aumentar/Reducir Cantidad en 10",
+        "changeQuantity50": "Aumentar/Reducir Cantidad en 50"
+    },
+    "STORMLIGHT": {
+        "Currency": {
+            "Spheres": "Esferas"
+        },
+        "Macro": {
+            "StartingPath": {
+                "Set": "Establecer camino inicial {path} para {actor}. Establecer habilidad inicial: {skill}.",
+                "Replaced": "Reemplazado camino inicial {oldPath} por {newPath} para {actor}. Establecer habilidad inicial: {skill}.",
+                "Unset": "Camino inicial eliminado para {actor}. Habilidad inicial eliminada: {skill}."
+            }
+        }
+    }
+}
