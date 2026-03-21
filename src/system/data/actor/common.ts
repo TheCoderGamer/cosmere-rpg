@@ -744,34 +744,50 @@ export class CommonActorDataModel<
     }
 }
 
-const SENSES_RANGES = [5, 10, 20, 50, 100, Number.MAX_VALUE];
+const SENSES_RANGES_FT = [5, 10, 20, 50, 100, Number.MAX_VALUE];
+const SENSES_RANGES_M = [1.5, 3, 6, 15, 30, Number.MAX_VALUE];
+
 function awarenessToSensesRange(attr: AttributeData) {
     const awareness = attr.value + attr.bonus;
-    return SENSES_RANGES[
-        Math.min(Math.ceil(awareness / 2), SENSES_RANGES.length)
-    ];
+    const ranges =
+        game.i18n.localize('GENERIC.DistanceUnit') === 'm'
+            ? SENSES_RANGES_M
+            : SENSES_RANGES_FT;
+    return ranges[Math.min(Math.ceil(awareness / 2), ranges.length)];
 }
 
-const MOVEMENT_RATES = [20, 25, 30, 40, 60, 80];
+const MOVEMENT_RATES_FT = [20, 25, 30, 40, 60, 80];
+const MOVEMENT_RATES_M = [6, 7.5, 9, 12, 18, 24];
+
 function speedToMovementRate(attr: AttributeData) {
     const speed = attr.value + attr.bonus;
-    return MOVEMENT_RATES[
-        Math.min(Math.ceil(speed / 2), MOVEMENT_RATES.length)
-    ];
+    const rates =
+        game.i18n.localize('GENERIC.DistanceUnit') === 'm'
+            ? MOVEMENT_RATES_M
+            : MOVEMENT_RATES_FT;
+    return rates[Math.min(Math.ceil(speed / 2), rates.length)];
 }
 
-const LIFTING_CAPACITIES = [100, 200, 500, 1000, 5000, 10000];
+const LIFTING_CAPACITIES_LB = [100, 200, 500, 1000, 5000, 10000];
+const LIFTING_CAPACITIES_KG = [45, 90, 225, 450, 2250, 4500];
+
 function strengthToLiftingCapacity(attr: AttributeData) {
     const strength = attr.value + attr.bonus;
-    return LIFTING_CAPACITIES[
-        Math.min(Math.ceil(strength / 2), LIFTING_CAPACITIES.length)
-    ];
+    const capacities =
+        game.i18n.localize('GENERIC.DistanceUnit') === 'm'
+            ? LIFTING_CAPACITIES_KG
+            : LIFTING_CAPACITIES_LB;
+    return capacities[Math.min(Math.ceil(strength / 2), capacities.length)];
 }
 
-const CARRYING_CAPACITIES = [50, 100, 250, 500, 2500, 5000];
+const CARRYING_CAPACITIES_LB = [50, 100, 250, 500, 2500, 5000];
+const CARRYING_CAPACITIES_KG = [22.5, 45, 112.5, 225, 1125, 2250];
+
 function strengthToCarryingCapacity(attr: AttributeData) {
     const strength = attr.value + attr.bonus;
-    return CARRYING_CAPACITIES[
-        Math.min(Math.ceil(strength / 2), CARRYING_CAPACITIES.length)
-    ];
+    const capacities =
+        game.i18n.localize('GENERIC.DistanceUnit') === 'm'
+            ? CARRYING_CAPACITIES_KG
+            : CARRYING_CAPACITIES_LB;
+    return capacities[Math.min(Math.ceil(strength / 2), capacities.length)];
 }
