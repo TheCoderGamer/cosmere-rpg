@@ -168,7 +168,7 @@
     ],
     "socket": true,
     "grid": {
-        "distance": 5,
+        "distance": 1.5,
         "units": "m"
     },
     "background": "systems/cosmere-rpg/assets/art/foundry_setup_Cosmere_RPG.webp",
