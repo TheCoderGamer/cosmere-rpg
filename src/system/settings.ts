@@ -1,5 +1,5 @@
 import { SYSTEM_ID } from './constants';
-import { Resource, Theme } from './types/cosmere';
+import { Resource, Theme, UnitSystem } from './types/cosmere';
 import { setTheme } from './utils/templates';
 import { ResourceConfig } from './types/config';
 
@@ -24,6 +24,7 @@ export const SETTINGS = {
     TOKEN_DEFAULT_BAR_1_VAL: 'defaultTokenBar1Value',
     TOKEN_DEFAULT_BAR_2_VAL: 'defaultTokenBar2Value',
     SYSTEM_THEME: 'systemTheme',
+    MEASUREMENT_UNIT_SYSTEM: 'measurementUnitSystem',
 } as const;
 
 type SystemSettingsConfig = {
@@ -62,9 +63,32 @@ type SystemSettingsConfig = {
     [key in `${typeof SYSTEM_ID}.${typeof SETTINGS.TOKEN_DEFAULT_BAR_2_VAL}`]:
         | `resources.${Resource}`
         | 'none';
-} & { [key in `${typeof SYSTEM_ID}.${typeof SETTINGS.SYSTEM_THEME}`]: Theme };
+} & {
+    [key in `${typeof SYSTEM_ID}.${typeof SETTINGS.SYSTEM_THEME}`]: Theme;
+} & {
+    [key in `${typeof SYSTEM_ID}.${typeof SETTINGS.MEASUREMENT_UNIT_SYSTEM}`]: UnitSystem;
+};
 
 type SystemSettingKey = (typeof SETTINGS)[keyof typeof SETTINGS];
+
+/**
+ * Determines the default unit system to use, based on the `GENERIC.DistanceUnit`
+ * localization key of the currently active language. Falls back to Imperial if
+ * the key is missing or set to anything other than the metric unit ('m').
+ *
+ * This is only used to seed the *default* value of the `MEASUREMENT_UNIT_SYSTEM`
+ * setting the first time it's registered for a given client — once a user has
+ * explicitly picked a unit system, that choice persists regardless of language.
+ */
+function getDefaultUnitSystem(): UnitSystem {
+    try {
+        return game.i18n.localize('GENERIC.DistanceUnit') === 'm'
+            ? UnitSystem.Metric
+            : UnitSystem.Imperial;
+    } catch {
+        return UnitSystem.Imperial;
+    }
+}
 
 export const enum TargetingOptions {
     SelectedOnly = 0,
@@ -220,6 +244,29 @@ export function registerSystemSettings() {
             ),
         },
     });
+
+    // UNIT SYSTEM SETTING
+    game.settings.register(SYSTEM_ID, SETTINGS.MEASUREMENT_UNIT_SYSTEM, {
+        name: game.i18n.localize(
+            `SETTINGS.${SETTINGS.MEASUREMENT_UNIT_SYSTEM}.name`,
+        ),
+        hint: game.i18n.localize(
+            `SETTINGS.${SETTINGS.MEASUREMENT_UNIT_SYSTEM}.hint`,
+        ),
+        scope: 'client',
+        config: true,
+        type: String,
+        default: getDefaultUnitSystem(),
+        requiresReload: true,
+        choices: {
+            [UnitSystem.Imperial]: game.i18n.localize(
+                `SETTINGS.${SETTINGS.MEASUREMENT_UNIT_SYSTEM}.choices.Imperial`,
+            ),
+            [UnitSystem.Metric]: game.i18n.localize(
+                `SETTINGS.${SETTINGS.MEASUREMENT_UNIT_SYSTEM}.choices.Metric`,
+            ),
+        },
+    });
 }
 
 /**
@@ -351,6 +398,20 @@ export function registerSystemKeybindings() {
             editable: keybind.editable,
         });
     });
+}
+
+/**
+ * Retrieves the localized unit label (distance or weight) matching the
+ * user's currently selected `MEASUREMENT_UNIT_SYSTEM` setting.
+ * @param kind Which kind of unit label to retrieve.
+ */
+export function getUnitLabel(kind: 'distance' | 'weight'): string {
+    const isMetric =
+        getSystemSetting(SETTINGS.MEASUREMENT_UNIT_SYSTEM) ===
+        UnitSystem.Metric;
+    const key =
+        kind === 'distance' ? 'GENERIC.DistanceUnit' : 'GENERIC.WeightUnit';
+    return game.i18n.localize(`${key}.${isMetric ? 'Metric' : 'Imperial'}`);
 }
 
 /**
