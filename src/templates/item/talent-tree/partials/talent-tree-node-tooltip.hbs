@@ -14,7 +14,7 @@
                             <span>{{talent.label}}</span>
                             <span>{{lower (localize "GENERIC.Talent")}}</span>
                             {{#if (not @last)}}
-                                <span>or</span>
+                                <span>{{localize "GENERIC.Or"}}</span>
                             {{/if}}
                         {{/each}}
                     {{else if (eq prereq.type "goal")}}
@@ -22,7 +22,7 @@
                         {{#each prereq.goals as |goal|}}
                             <span>{{goal.label}}</span>
                             {{#if (not @last)}}
-                                <span>or</span>
+                                <span>{{localize "GENERIC.Or"}}</span>
                             {{/if}}
                         {{/each}}
                     {{else if (eq prereq.type "attribute")}}

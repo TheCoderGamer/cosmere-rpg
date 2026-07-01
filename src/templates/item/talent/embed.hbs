@@ -7,13 +7,13 @@
 
 {{#if prerequisite}}
     <p>
-        <span class="fontstyle2"><strong>Prerequisite:</strong></span>
+        <span class="fontstyle2"><strong>{{localize "COSMERE.Item.Talent.Embed.Prerequisite"}}</strong></span>
 
         {{#if (eq (typeof prerequisite) "string")}}
             <span>{{{prerequisite}}}</span>
         {{else}}
             {{#if (eq prerequisite.size 0)}}
-                <span>none</span>
+                <span>{{localize "GENERIC.None"}}</span>
             {{else}}
                 {{#each prerequisite as |prereq|}}
                     {{#if (eq prereq.type "talent")}}
@@ -23,7 +23,7 @@
                                 {{lower (localize "GENERIC.Talent")}}{{#unless (or (not @last) @../last)}};{{/unless}}
                             </span>
                             {{#if (not @last)}}
-                                <span>or</span>  
+                                <span>{{localize "GENERIC.Or"}}</span>  
                             {{/if}}
                         {{/each}}
                     {{else if (eq prereq.type "attribute")}}

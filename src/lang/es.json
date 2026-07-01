@@ -304,6 +304,9 @@
                 "Attributes": {
                     "Defense": "DEF",
                     "IsModifiedTooltip": "Este atributo está siendo modificado por un efecto."
+                },
+                "Encumbrance": {
+                    "TotalWeight": "Peso total:"
                 }
             }
         },
@@ -565,6 +568,9 @@
                 "Power": {
                     "Label": "Identificador de Poder",
                     "Hint": "Identificador del poder al que pertenece este talento."
+                },
+                "Embed": {
+                    "Prerequisite": "Prerequisito:"
                 }
             },
             "TalentTree": {
@@ -1219,7 +1225,13 @@
                     "Description": "Descripción",
                     "Trigger": "Desencadenante",
                     "Handler": "Manejador",
-                    "Create": "Añadir regla de evento"
+                    "Create": "Añadir regla de evento",
+                    "Delete": "Eliminar",
+                    "Edit": "Editar",
+                    "Toggle": {
+                        "Active": "Desactivar",
+                        "Inactive": "Activar"
+                    }
                 }
             },
             "General": {
@@ -1515,6 +1527,12 @@
         },
         "EditEventRule": {
             "Title": "Editar Regla de Evento"
+        },
+        "ConfigureCarryCapacity": {
+            "Title": "Configurar capacidad de carga: {actor}"
+        },
+        "ConfigureLiftingCapacity": {
+            "Title": "Configurar capacidad de levantamiento: {actor}"
         }
     },
     "COMPONENT": {
@@ -1644,7 +1662,9 @@
         },
         "Units": {
             "Days": "Días"
-        }
+        },
+        "Or": "o",
+        "WeightUnit": "kg"
     },
     "TYPES": {
         "Actor": {
@@ -1718,6 +1738,30 @@
         "systemTheme": {
             "name": "Tema del Sistema Preferido",
             "hint": "Especifica el conjunto de colores temáticos a usar para los documentos e interfaz del sistema. El tema seleccionado respetará el modo Oscuro/Claro preferido seleccionado en la configuración central."
+        },
+        "defaultTokenAutomationBars": {
+            "hint": "Determina si los tokens tendrán barras de recurso configuradas por defecto",
+            "name": "Automatización de tokens: Barras"
+        },
+        "defaultTokenAutomationSight": {
+            "hint": "Determina si la visión de los tokens se configurará automáticamente según los sentidos del actor",
+            "name": "Automatización de tokens: Visión"
+        },
+        "defaultTokenAutomationSize": {
+            "hint": "Determina si el tamaño de cuadrícula del token se ajustará automáticamente según el tamaño del actor",
+            "name": "Automatización de tokens: Tamaño"
+        },
+        "defaultTokenBar1Value": {
+            "hint": "Determina el recurso del actor asociado por defecto a la barra 1 en los tokens.",
+            "name": "Recurso por defecto de la barra 1 del token"
+        },
+        "defaultTokenBar2Value": {
+            "hint": "Determina el recurso del actor asociado por defecto a la barra 2 en los tokens.",
+            "name": "Recurso por defecto de la barra 2 del token"
+        },
+        "expandSectionsByDefault": {
+            "hint": "Determina si las secciones de listas de acciones o equipo aparecen expandidas por defecto al abrir una ficha.",
+            "name": "Expandir secciones de la ficha por defecto"
         }
     },
     "KEYBINDINGS": {

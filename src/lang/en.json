@@ -304,6 +304,9 @@
                 "Attributes": {
                     "Defense": "DEF",
                     "IsModifiedTooltip": "This attribute is being modified by an effect."
+                },
+                "Encumbrance": {
+                    "TotalWeight": "Total Weight:"
                 }
             }
         },
@@ -565,6 +568,9 @@
                 "Power": {
                     "Label": "Power Identifier",
                     "Hint": "Identifier of the power this talent belongs to."
+                },
+                "Embed": {
+                    "Prerequisite": "Prerequisite:"
                 }
             },
             "TalentTree": {
@@ -1656,7 +1662,9 @@
         },
         "Units": {
             "Days": "Days"
-        }
+        },
+        "Or": "or",
+        "WeightUnit": "lbs"
     },
     "TYPES": {
         "Actor": {
