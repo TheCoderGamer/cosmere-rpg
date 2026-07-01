@@ -418,17 +418,6 @@
                 }
             },
             "Weapon": {
-                "Axe": "Axe",
-                "Hammer": "Hammer",
-                "Knife": "Knife",
-                "Longsword": "Longsword",
-                "Longspear": "Longspear",
-                "Mace": "Mace",
-                "Shield": "Shield",
-                "Shortbow": "Shortbow",
-                "Shortspear": "Shortspear",
-                "Sidesword": "Sidesword",
-                "Staff": "Staff",
                 "Type": {
                     "Light": "Light",
                     "Heavy": "Heavy",
@@ -460,12 +449,6 @@
                 "Unarmed": "Unarmed Strike"
             },
             "Armor": {
-                "Breastplate": "Breastplate",
-                "Chain": "Chain",
-                "FullPlate": "Full Plate",
-                "HalfPlate": "Half Plate",
-                "Leather": "Leather",
-                "Uniform": "Uniform",
                 "Name": {
                     "placeholder": "[Armor Name]"
                 },
@@ -1272,14 +1255,6 @@
             "ResetActivation": "Reset Activation",
             "Activate": "Mark as Acted"
         },
-        "Culture": {
-            "Alethi": "Alethi",
-            "Azish": "Azish",
-            "Herdazian": "Herdazian",
-            "Thaylen": "Thaylen",
-            "Unkalaki": "Unkalaki",
-            "Veden": "Veden"
-        },
         "Status": {
             "Afflicted": "Afflicted",
             "Blind": "Senseblind",
@@ -1410,6 +1385,39 @@
         },
         "Migration": {
             "DocumentMigrationFailed": "Failed to migrate {type} \"{name}\". {error}"
+        },
+        "Objects": {
+            "Stormlight": {
+                "Weapon": {
+                    "Axe": "Axe",
+                    "Hammer": "Hammer",
+                    "Knife": "Knife",
+                    "Longsword": "Longsword",
+                    "Longspear": "Longspear",
+                    "Mace": "Mace",
+                    "Shield": "Shield",
+                    "Shortbow": "Shortbow",
+                    "Shortspear": "Shortspear",
+                    "Sidesword": "Sidesword",
+                    "Staff": "Staff"
+                },
+                "Armor": {
+                    "Breastplate": "Breastplate",
+                    "Chain": "Chain",
+                    "FullPlate": "Full Plate",
+                    "HalfPlate": "Half Plate",
+                    "Leather": "Leather",
+                    "Uniform": "Uniform"
+                },
+                "Culture": {
+                    "Alethi": "Alethi",
+                    "Azish": "Azish",
+                    "Herdazian": "Herdazian",
+                    "Thaylen": "Thaylen",
+                    "Unkalaki": "Unkalaki",
+                    "Veden": "Veden"
+                }
+            }
         }
     },
     "DICE": {
@@ -1585,7 +1593,10 @@
         "Condition": "Condition",
         "Cost": "Cost",
         "Configure": "Configure",
-        "DistanceUnit": "ft.",
+        "DistanceUnit": {
+            "Imperial": "ft.",
+            "Metric": "m"
+        },
         "ViewDetails": "View Details",
         "HideDetails": "Hide Details",
         "Bonus": "Bonus",
@@ -1664,7 +1675,10 @@
             "Days": "Days"
         },
         "Or": "or",
-        "WeightUnit": "lbs"
+        "WeightUnit": {
+            "Imperial": "lbs",
+            "Metric": "kg"
+        }
     },
     "TYPES": {
         "Actor": {
@@ -1762,6 +1776,14 @@
         "systemTheme": {
             "name": "Preferred System Theme",
             "hint": "Specify the themed set of colours to use for system documents and interface elements. The selected theme will respect the preferred Dark/Light mode selected in the core settings."
+        },
+        "measurementUnitSystem": {
+            "name": "Unit System",
+            "hint": "Determines whether distances and weights are displayed in Imperial (ft, lbs) or Metric (m, kg) units throughout the system.",
+            "choices": {
+                "Imperial": "Imperial (ft, lbs)",
+                "Metric": "Metric (m, kg)"
+            }
         }
     },
     "KEYBINDINGS": {

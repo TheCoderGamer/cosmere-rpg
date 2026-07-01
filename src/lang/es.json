@@ -418,17 +418,6 @@
                 }
             },
             "Weapon": {
-                "Axe": "Hacha",
-                "Hammer": "Martillo",
-                "Knife": "Cuchillo",
-                "Longsword": "Espada larga",
-                "Longspear": "Lanza larga",
-                "Mace": "Maza",
-                "Shield": "Escudo",
-                "Shortbow": "Arco corto",
-                "Shortspear": "Lanza corta",
-                "Sidesword": "Espada lateral",
-                "Staff": "Bastón",
                 "Type": {
                     "Light": "Ligera",
                     "Heavy": "Pesada",
@@ -460,12 +449,6 @@
                 "Unarmed": "Golpe Desarmado"
             },
             "Armor": {
-                "Breastplate": "Peto",
-                "Chain": "Cota de malla",
-                "FullPlate": "Armadura completa",
-                "HalfPlate": "Media armadura",
-                "Leather": "Cuero",
-                "Uniform": "Uniforme",
                 "Name": {
                     "placeholder": "[Nombre de la Armadura]"
                 },
@@ -1272,14 +1255,6 @@
             "ResetActivation": "Reiniciar Activación",
             "Activate": "Marcar como Actuado"
         },
-        "Culture": {
-            "Alethi": "Alezi",
-            "Azish": "Azishiano",
-            "Herdazian": "Herdaziano",
-            "Thaylen": "Thayleño",
-            "Unkalaki": "Unkalaki",
-            "Veden": "Veden"
-        },
         "Status": {
             "Afflicted": "Afligido",
             "Blind": "Ciego",
@@ -1410,6 +1385,39 @@
         },
         "Migration": {
             "DocumentMigrationFailed": "Error al migrar {type} \"{name}\". {error}"
+        },
+        "Objects": {
+            "Stormlight": {
+                "Weapon": {
+                    "Axe": "Hacha",
+                    "Hammer": "Martillo",
+                    "Knife": "Cuchillo",
+                    "Longsword": "Espada larga",
+                    "Longspear": "Lanza larga",
+                    "Mace": "Maza",
+                    "Shield": "Escudo",
+                    "Shortbow": "Arco corto",
+                    "Shortspear": "Lanza corta",
+                    "Sidesword": "Espada lateral",
+                    "Staff": "Bastón"
+                },
+                "Armor": {
+                    "Breastplate": "Peto",
+                    "Chain": "Cota de malla",
+                    "FullPlate": "Armadura completa",
+                    "HalfPlate": "Media armadura",
+                    "Leather": "Cuero",
+                    "Uniform": "Uniforme"
+                },
+                "Culture": {
+                    "Alethi": "Alezi",
+                    "Azish": "Azishiano",
+                    "Herdazian": "Herdaziano",
+                    "Thaylen": "Thayleño",
+                    "Unkalaki": "Unkalaki",
+                    "Veden": "Veden"
+                }
+            }
         }
     },
     "DICE": {
@@ -1585,7 +1593,10 @@
         "Condition": "Condición",
         "Cost": "Coste",
         "Configure": "Configurar",
-        "DistanceUnit": "m",
+        "DistanceUnit": {
+            "Imperial": "ft.",
+            "Metric": "m"
+        },
         "ViewDetails": "Ver Detalles",
         "HideDetails": "Ocultar Detalles",
         "Bonus": "Bonificación",
@@ -1664,7 +1675,10 @@
             "Days": "Días"
         },
         "Or": "o",
-        "WeightUnit": "kg"
+        "WeightUnit": {
+            "Imperial": "lbs",
+            "Metric": "kg"
+        }
     },
     "TYPES": {
         "Actor": {
@@ -1762,6 +1776,14 @@
         "expandSectionsByDefault": {
             "hint": "Determina si las secciones de listas de acciones o equipo aparecen expandidas por defecto al abrir una ficha.",
             "name": "Expandir secciones de la ficha por defecto"
+        },
+        "measurementUnitSystem": {
+            "name": "Sistema de unidades",
+            "hint": "Determina si las distancias y pesos se muestran en unidades imperiales (ft, lbs) o métricas (m, kg) en todo el sistema.",
+            "choices": {
+                "Imperial": "Imperial (ft, lbs)",
+                "Metric": "Métrico (m, kg)"
+            }
         }
     },
     "KEYBINDINGS": {
