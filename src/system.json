@@ -172,7 +172,7 @@
         "units": "m"
     },
     "background": "systems/cosmere-rpg/assets/art/foundry_setup_Cosmere_RPG.webp",
-    "url": "https://github.com/TheCoderGamer/cosmere-rpg",
-    "manifest": "https://raw.githubusercontent.com/TheCoderGamer/cosmere-rpg/main/src/system.json",
-    "download": "https://github.com/TheCoderGamer/cosmere-rpg/releases/download/release-1/release.zip"
+    "url": "https://kodegit.torakode.com/TheCoder/cosmere-rpg",
+    "manifest": "https://kodegit.torakode.com/TheCoder/cosmere-rpg/raw/branch/main/src/system.json",
+    "download": "https://kodegit.torakode.com/TheCoder/cosmere-rpg/releases/download/v2.1.2/release.zip"
 }
