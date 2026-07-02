@@ -30,7 +30,7 @@ jobs:
       - name: Compute new version
         id: version
         run: |
-          CURRENT=$(jq -r '.version' src/system.json)
+          CURRENT=$(node -p "require('./src/system.json').version")
           MAJOR=$(echo "$CURRENT" | cut -d'.' -f1)
           MINOR=$(echo "$CURRENT" | cut -d'.' -f2)
           PATCH=$(echo "$CURRENT" | cut -d'.' -f3)
@@ -52,18 +52,26 @@ jobs:
           echo "new_version=$NEW" >> "$GITHUB_OUTPUT"
 
       - name: Update system.json and package.json
+        env:
+          NEW_VERSION: ${{ steps.version.outputs.new_version }}
+          DOWNLOAD_URL: https://kodegit.torakode.com/${{ github.repository }}/releases/download/v${{ steps.version.outputs.new_version }}/release.zip
         run: |
-          NEW="${{ steps.version.outputs.new_version }}"
-          TAG="v$NEW"
-          DOWNLOAD_URL="https://kodegit.torakode.com/${{ github.repository }}/releases/download/$TAG/release.zip"
+          node -e "
+            const fs = require('fs');
+            const newVersion = process.env.NEW_VERSION;
+            const downloadUrl = process.env.DOWNLOAD_URL;
 
-          jq --arg v "$NEW" --arg d "$DOWNLOAD_URL" \
-            '.version = $v | .download = $d' \
-            src/system.json > src/system.json.tmp
-          mv src/system.json.tmp src/system.json
+            const sysPath = 'src/system.json';
+            const sys = JSON.parse(fs.readFileSync(sysPath, 'utf8'));
+            sys.version = newVersion;
+            sys.download = downloadUrl;
+            fs.writeFileSync(sysPath, JSON.stringify(sys, null, 4) + '\n');
 
-          jq --arg v "$NEW" '.version = $v' package.json > package.json.tmp
-          mv package.json.tmp package.json
+            const pkgPath = 'package.json';
+            const pkg = JSON.parse(fs.readFileSync(pkgPath, 'utf8'));
+            pkg.version = newVersion;
+            fs.writeFileSync(pkgPath, JSON.stringify(pkg, null, 4) + '\n');
+          "
 
       - name: Commit version bump
         run: |
