@@ -20,9 +20,12 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
+          cache: 'npm'
 
+      # --ignore-scripts se salta el postinstall de Electron (devDependency
+      # que no hace falta para "build"/"zip", solo añade una descarga pesada)
       - name: Install dependencies
-        run: npm ci
+        run: npm ci --ignore-scripts
 
       - name: Build system
         run: npm run build
