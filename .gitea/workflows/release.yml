@@ -30,14 +30,20 @@ jobs:
       - name: Create release zip
         run: npm run zip release.zip
 
-      - name: Publish Gitea Release
-        uses: akkuman/gitea-release-action@v1
-        env:
-          NODE_OPTIONS: '--experimental-fetch'
+      # actions/forgejo-release sube el CONTENIDO de una carpeta, no una
+      # lista de archivos sueltos, así que primero los agrupamos ahí
+      - name: Prepare release assets
+        run: |
+          mkdir -p dist/release
+          cp release.zip dist/release/
+          cp src/system.json dist/release/
+
+      - name: Publish Forgejo Release
+        uses: actions/forgejo-release@v2
         with:
+          direction: upload
+          url: https://kodegit.torakode.com
+          repo: ${{ github.repository }}
+          release-dir: dist/release
+          tag: ${{ github.ref_name }}
           token: ${{ secrets.RELEASE_TOKEN }}
-          tag_name: ${{ github.ref_name }}
-          name: ${{ github.ref_name }}
-          files: |-
-            release.zip
-            src/system.json
