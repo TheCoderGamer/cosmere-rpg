@@ -1360,6 +1360,11 @@
             "DocumentMigrationFailed": "Error al migrar {type} \"{name}\". {error}"
         },
         "Objects": {
+            "Generic": {
+                "Ancestry": {
+                    "Human": "Humano"
+                }
+            },
             "Stormlight": {
                 "Weapon": {
                     "Axe": "Hacha",
@@ -1389,6 +1394,29 @@
                     "Thaylen": "Thayleño",
                     "Unkalaki": "Unkalaki",
                     "Veden": "Veden"
+                },
+                "Currency": {
+                    "Spheres": "Esferas",
+                    "Mark": "Marca",
+                    "Chip": "Chip",
+                    "Broam": "Broam",
+                    "Diamond": "Diamante",
+                    "Garnet": "Granate",
+                    "Heliodor": "Heliodoro",
+                    "Topaz": "Topacio",
+                    "Ruby": "Rubí",
+                    "Smokestone": "Piedra de Humo",
+                    "Zircon": "Circón",
+                    "Amethyst": "Amatista",
+                    "Sapphire": "Zafiro",
+                    "Emerald": "Esmeralda"
+                },
+                "Macro": {
+                    "StartingPath": {
+                        "Set": "Establecer camino inicial {path} para {actor}. Establecer habilidad inicial: {skill}.",
+                        "Replaced": "Reemplazado camino inicial {oldPath} por {newPath} para {actor}. Establecer habilidad inicial: {skill}.",
+                        "Unset": "Camino inicial eliminado para {actor}. Habilidad inicial eliminada: {skill}."
+                    }
                 }
             }
         }
@@ -1767,17 +1795,5 @@
         "changeQuantity5": "Aumentar/Reducir Cantidad en 5",
         "changeQuantity10": "Aumentar/Reducir Cantidad en 10",
         "changeQuantity50": "Aumentar/Reducir Cantidad en 50"
-    },
-    "STORMLIGHT": {
-        "Currency": {
-            "Spheres": "Esferas"
-        },
-        "Macro": {
-            "StartingPath": {
-                "Set": "Establecer camino inicial {path} para {actor}. Establecer habilidad inicial: {skill}.",
-                "Replaced": "Reemplazado camino inicial {oldPath} por {newPath} para {actor}. Establecer habilidad inicial: {skill}.",
-                "Unset": "Camino inicial eliminado para {actor}. Habilidad inicial eliminada: {skill}."
-            }
-        }
     }
 }

@@ -45,13 +45,16 @@ export async function set(
 
     if (options?.notify !== false) {
         ui.notifications.info(
-            game.i18n.format('STORMLIGHT.Macro.StartingPath.Set', {
-                path: item.name,
-                actor: actor.name,
-                skill: game.i18n.localize(
-                    `COSMERE.Actor.Skill.${STARTING_SKILLS[item.system.id]}`,
-                ),
-            }),
+            game.i18n.format(
+                'COSMERE.Objects.Stormlight.Macro.StartingPath.Set',
+                {
+                    path: item.name,
+                    actor: actor.name,
+                    skill: game.i18n.localize(
+                        `COSMERE.Actor.Skill.${STARTING_SKILLS[item.system.id]}`,
+                    ),
+                },
+            ),
         );
     }
 }
@@ -90,8 +93,8 @@ export async function unset(
         ui.notifications.info(
             game.i18n.format(
                 newStartingPath
-                    ? 'STORMLIGHT.Macro.StartingPath.Replaced'
-                    : 'STORMLIGHT.Macro.StartingPath.Unset',
+                    ? 'COSMERE.Objects.Stormlight.Macro.StartingPath.Replaced'
+                    : 'COSMERE.Objects.Stormlight.Macro.StartingPath.Unset',
                 {
                     actor: actor.name,
                     skill: game.i18n.localize(

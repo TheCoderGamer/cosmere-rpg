@@ -1360,6 +1360,11 @@
             "DocumentMigrationFailed": "Failed to migrate {type} \"{name}\". {error}"
         },
         "Objects": {
+            "Generic": {
+                "Ancestry": {
+                    "Human": "Human"
+                }
+            },
             "Stormlight": {
                 "Weapon": {
                     "Axe": "Axe",
@@ -1389,6 +1394,29 @@
                     "Thaylen": "Thaylen",
                     "Unkalaki": "Unkalaki",
                     "Veden": "Veden"
+                },
+                "Currency": {
+                    "Spheres": "Spheres",
+                    "Mark": "Mark",
+                    "Chip": "Chip",
+                    "Broam": "Broam",
+                    "Diamond": "Diamond",
+                    "Garnet": "Garnet",
+                    "Heliodor": "Heliodor",
+                    "Topaz": "Topaz",
+                    "Ruby": "Ruby",
+                    "Smokestone": "Smokestone",
+                    "Zircon": "Zircon",
+                    "Amethyst": "Amethyst",
+                    "Sapphire": "Sapphire",
+                    "Emerald": "Emerald"
+                },
+                "Macro": {
+                    "StartingPath": {
+                        "Set": "Set starting path {path} for {actor}. Set starting skill: {skill}.",
+                        "Replaced": "Replaced starting path {oldPath} with {newPath} for {actor}. Set starting skill: {skill}.",
+                        "Unset": "Cleared starting path for {actor}. Removed starting skill: {skill}."
+                    }
                 }
             }
         }
@@ -1767,17 +1795,5 @@
         "changeQuantity5": "Increase/Decrease Quantity by 5",
         "changeQuantity10": "Increase/Decrease Quantity by 10",
         "changeQuantity50": "Increase/Decrease Quantity by 50"
-    },
-    "STORMLIGHT": {
-        "Currency": {
-            "Spheres": "Spheres"
-        },
-        "Macro": {
-            "StartingPath": {
-                "Set": "Set starting path {path} for {actor}. Set starting skill: {skill}.",
-                "Replaced": "Replaced starting path {oldPath} with {newPath} for {actor}. Set starting skill: {skill}.",
-                "Unset": "Cleared starting path for {actor}. Removed starting skill: {skill}."
-            }
-        }
     }
 }
