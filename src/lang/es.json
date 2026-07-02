@@ -1782,6 +1782,10 @@
                 "Imperial": "Imperial (ft, lbs)",
                 "Metric": "Métrico (m, kg)"
             }
+        },
+        "hideStarterContentWithHandbook": {
+            "name": "Ocultar contenido inicial con el manual",
+            "hint": "Oculta automáticamente de la barra lateral los compendios de contenido inicial propios del sistema (armas, armaduras, ancestrías, culturas, caminos heroicos, acciones, compañeros y adversarios, tablas) cuando el módulo oficial del Manual de Stormlight está activo, para evitar contenido duplicado. Desactiva esto si prefieres seguir viendo el contenido inicial."
         }
     },
     "KEYBINDINGS": {

@@ -25,6 +25,7 @@ export const SETTINGS = {
     TOKEN_DEFAULT_BAR_2_VAL: 'defaultTokenBar2Value',
     SYSTEM_THEME: 'systemTheme',
     MEASUREMENT_UNIT_SYSTEM: 'measurementUnitSystem',
+    HIDE_STARTER_CONTENT_WITH_HANDBOOK: 'hideStarterContentWithHandbook',
 } as const;
 
 type SystemSettingsConfig = {
@@ -67,6 +68,8 @@ type SystemSettingsConfig = {
     [key in `${typeof SYSTEM_ID}.${typeof SETTINGS.SYSTEM_THEME}`]: Theme;
 } & {
     [key in `${typeof SYSTEM_ID}.${typeof SETTINGS.MEASUREMENT_UNIT_SYSTEM}`]: UnitSystem;
+} & {
+    [key in `${typeof SYSTEM_ID}.${typeof SETTINGS.HIDE_STARTER_CONTENT_WITH_HANDBOOK}`]: boolean;
 };
 
 type SystemSettingKey = (typeof SETTINGS)[keyof typeof SETTINGS];
@@ -267,6 +270,25 @@ export function registerSystemSettings() {
             ),
         },
     });
+
+    // HIDE STARTER CONTENT WHEN HANDBOOK MODULE IS ACTIVE
+    game.settings.register(
+        SYSTEM_ID,
+        SETTINGS.HIDE_STARTER_CONTENT_WITH_HANDBOOK,
+        {
+            name: game.i18n.localize(
+                `SETTINGS.${SETTINGS.HIDE_STARTER_CONTENT_WITH_HANDBOOK}.name`,
+            ),
+            hint: game.i18n.localize(
+                `SETTINGS.${SETTINGS.HIDE_STARTER_CONTENT_WITH_HANDBOOK}.hint`,
+            ),
+            scope: 'world',
+            config: true,
+            type: Boolean,
+            default: true,
+            requiresReload: true,
+        },
+    );
 }
 
 /**

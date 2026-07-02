@@ -9,6 +9,13 @@ export const SYSTEM_ID = 'cosmere-rpg';
 export const SYSTEM_NAME = 'Cosmere Roleplaying Game';
 
 /**
+ * Package id of the official "Cosmere RPG: Stormlight Handbook" module (Brotherwise Games).
+ * Used to detect whether the full compendium content is installed, so the system's own
+ * starter-kit compendiums can be hidden automatically to avoid duplicated/overlapping content.
+ */
+export const STORMLIGHT_HANDBOOK_MODULE_ID = 'cosmere-rpg-stormlight-handbook';
+
+/**
  * Author name of the system.
  */
 export const AUTHOR_NAME = 'The Metalworks';
@@ -47,7 +54,9 @@ export const IMPORTED_RESOURCES = {
 
 export const COMPENDIUMS = {
     ACTIONS: `${SYSTEM_ID}.actions`,
+    ANCESTRIES: `${SYSTEM_ID}.ancestries`,
     COMPANIONS_AND_ADVERSARIES: `${SYSTEM_ID}.companions-and-adversaries`,
+    CULTURES: `${SYSTEM_ID}.cultures`,
     HEROIC_PATHS: `${SYSTEM_ID}.heroic-paths`,
     ITEMS: `${SYSTEM_ID}.items`,
     STARTER_RULES: `${SYSTEM_ID}.starter-rules`,

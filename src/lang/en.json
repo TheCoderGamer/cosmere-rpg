@@ -1782,6 +1782,10 @@
                 "Imperial": "Imperial (ft, lbs)",
                 "Metric": "Metric (m, kg)"
             }
+        },
+        "hideStarterContentWithHandbook": {
+            "name": "Hide Starter Content with Handbook",
+            "hint": "Automatically hides the system's built-in starter-kit compendiums (weapons, armor, ancestries, cultures, heroic paths, actions, companions & adversaries, roll tables) from the sidebar when the official Stormlight Handbook module is active, to avoid duplicated/overlapping content. Disable this if you'd rather keep the starter content visible."
         }
     },
     "KEYBINDINGS": {

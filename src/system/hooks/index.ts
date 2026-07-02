@@ -5,6 +5,7 @@ import './actor';
 import './enrichers';
 import './journal';
 import './compendium';
+import './starter-content-visibility';
 import './hotbar';
 
 export { register as registerItemEventSystem } from './item-event-system';
