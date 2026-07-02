@@ -49,7 +49,7 @@ export async function set(
                 path: item.name,
                 actor: actor.name,
                 skill: game.i18n.localize(
-                    `COSMERE.Skill.${STARTING_SKILLS[item.system.id]}`,
+                    `COSMERE.Actor.Skill.${STARTING_SKILLS[item.system.id]}`,
                 ),
             }),
         );
@@ -95,7 +95,7 @@ export async function unset(
                 {
                     actor: actor.name,
                     skill: game.i18n.localize(
-                        `COSMERE.Skill.${STARTING_SKILLS[newStartingPath?.system.id ?? item.system.id]}`,
+                        `COSMERE.Actor.Skill.${STARTING_SKILLS[newStartingPath?.system.id ?? item.system.id]}`,
                     ),
                     oldPath: item.name,
                     newPath: newStartingPath?.name ?? '',

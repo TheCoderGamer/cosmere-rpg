@@ -66,27 +66,27 @@
             "Attribute": {
                 "name": "Attribute",
                 "name_plural": "Attributes",
-                "Strength": {
+                "str": {
                     "long": "Strength",
                     "short": "STR"
                 },
-                "Speed": {
+                "spd": {
                     "long": "Speed",
                     "short": "SPD"
                 },
-                "Intellect": {
+                "int": {
                     "long": "Intellect",
                     "short": "INT"
                 },
-                "Willpower": {
+                "wil": {
                     "long": "Willpower",
                     "short": "WIL"
                 },
-                "Awareness": {
+                "awa": {
                     "long": "Awareness",
                     "short": "AWA"
                 },
-                "Presence": {
+                "pre": {
                     "long": "Presence",
                     "short": "PRE"
                 }
@@ -99,24 +99,24 @@
             "Skill": {
                 "label": "Skill",
                 "label_p": "Skills",
-                "Agility": "Agility",
-                "Athletics": "Athletics",
-                "HeavyWeapons": "Heavy Weaponry",
-                "LightWeapons": "Light Weaponry",
-                "Stealth": "Stealth",
-                "Thievery": "Thievery",
-                "Crafting": "Crafting",
-                "Deduction": "Deduction",
-                "Discipline": "Discipline",
-                "Intimidation": "Intimidation",
-                "Lore": "Lore",
-                "Medicine": "Medicine",
-                "Deception": "Deception",
-                "Insight": "Insight",
-                "Leadership": "Leadership",
-                "Perception": "Perception",
-                "Persuasion": "Persuasion",
-                "Survival": "Survival"
+                "agi": "Agility",
+                "ath": "Athletics",
+                "hwp": "Heavy Weaponry",
+                "lwp": "Light Weaponry",
+                "stl": "Stealth",
+                "thv": "Thievery",
+                "cra": "Crafting",
+                "ded": "Deduction",
+                "dis": "Discipline",
+                "inm": "Intimidation",
+                "lor": "Lore",
+                "med": "Medicine",
+                "dec": "Deception",
+                "ins": "Insight",
+                "lea": "Leadership",
+                "prc": "Perception",
+                "prs": "Persuasion",
+                "sur": "Survival"
             },
             "Statistics": {
                 "Defense": "Defense",
@@ -1315,34 +1315,6 @@
                 "Cancel": "Discard Changes",
                 "Submit": "Finish Editing"
             }
-        },
-        "Attribute": {
-            "str": "Strength",
-            "spd": "Speed",
-            "int": "Intellect",
-            "wil": "Willpower",
-            "awa": "Awareness",
-            "pre": "Presence"
-        },
-        "Skill": {
-            "agi": "Agility",
-            "ath": "Athletics",
-            "hwp": "Heavy Weapons",
-            "lwp": "Light Weapons",
-            "stl": "Stealth",
-            "thv": "Thievery",
-            "cra": "Crafting",
-            "ded": "Deduction",
-            "dis": "Discipline",
-            "inm": "Intimidation",
-            "lor": "Lore",
-            "med": "Medicine",
-            "dec": "Deception",
-            "ins": "Insight",
-            "lea": "Leadership",
-            "prc": "Perception",
-            "prs": "Persuasion",
-            "sur": "Survival"
         },
         "ChatMessage": {
             "Buttons": {

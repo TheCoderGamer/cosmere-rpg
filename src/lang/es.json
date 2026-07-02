@@ -66,27 +66,27 @@
             "Attribute": {
                 "name": "Atributo",
                 "name_plural": "Atributos",
-                "Strength": {
+                "str": {
                     "long": "Fuerza",
                     "short": "FUE"
                 },
-                "Speed": {
+                "spd": {
                     "long": "Velocidad",
                     "short": "VEL"
                 },
-                "Intellect": {
+                "int": {
                     "long": "Intelecto",
                     "short": "INT"
                 },
-                "Willpower": {
+                "wil": {
                     "long": "Voluntad",
                     "short": "VOL"
                 },
-                "Awareness": {
+                "awa": {
                     "long": "Percepcion",
                     "short": "PER"
                 },
-                "Presence": {
+                "pre": {
                     "long": "Presencia",
                     "short": "PRE"
                 }
@@ -99,24 +99,24 @@
             "Skill": {
                 "label": "Habilidad",
                 "label_p": "Habilidades",
-                "Agility": "Agilidad",
-                "Athletics": "Atletismo",
-                "HeavyWeapons": "Armamento Pesado",
-                "LightWeapons": "Armamento Ligero",
-                "Stealth": "Sigilo",
-                "Thievery": "Hurto",
-                "Crafting": "Manufactura",
-                "Deduction": "Deducción",
-                "Discipline": "Disciplina",
-                "Intimidation": "Intimidación",
-                "Lore": "Saber",
-                "Medicine": "Medicina",
-                "Deception": "Engaño",
-                "Insight": "Perspicacia",
-                "Leadership": "Liderazgo",
-                "Perception": "Percepcion",
-                "Persuasion": "Persuasión",
-                "Survival": "Supervivencia"
+                "agi": "Agilidad",
+                "ath": "Atletismo",
+                "hwp": "Armamento Pesado",
+                "lwp": "Armamento Ligero",
+                "stl": "Sigilo",
+                "thv": "Hurto",
+                "cra": "Manufactura",
+                "ded": "Deducción",
+                "dis": "Disciplina",
+                "inm": "Intimidación",
+                "lor": "Saber",
+                "med": "Medicina",
+                "dec": "Engaño",
+                "ins": "Perspicacia",
+                "lea": "Liderazgo",
+                "prc": "Percepción",
+                "prs": "Persuasión",
+                "sur": "Supervivencia"
             },
             "Statistics": {
                 "Defense": "Defensa",
@@ -1210,12 +1210,12 @@
                     "Trigger": "Desencadenante",
                     "Handler": "Manejador",
                     "Create": "Añadir regla de evento",
-                    "Delete": "Eliminar",
-                    "Edit": "Editar",
                     "Toggle": {
                         "Active": "Desactivar",
                         "Inactive": "Activar"
-                    }
+                    },
+                    "Edit": "Editar",
+                    "Delete": "Eliminar"
                 }
             },
             "General": {
@@ -1315,34 +1315,6 @@
                 "Cancel": "Descartar Cambios",
                 "Submit": "Finalizar Edición"
             }
-        },
-        "Attribute": {
-            "str": "Fuerza",
-            "spd": "Velocidad",
-            "int": "Intelecto",
-            "wil": "Voluntad",
-            "awa": "Percepcion",
-            "pre": "Presencia"
-        },
-        "Skill": {
-            "agi": "Agilidad",
-            "ath": "Atletismo",
-            "hwp": "Armamento Pesado",
-            "lwp": "Armamento Ligero",
-            "stl": "Sigilo",
-            "thv": "Hurto",
-            "cra": "Manufactura",
-            "ded": "Deducción",
-            "dis": "Disciplina",
-            "inm": "Intimidación",
-            "lor": "Saber",
-            "med": "Medicina",
-            "dec": "Engaño",
-            "ins": "Perspicacia",
-            "lea": "Liderazgo",
-            "prc": "Percepcion",
-            "prs": "Persuasión",
-            "sur": "Supervivencia"
         },
         "ChatMessage": {
             "Buttons": {
@@ -1487,6 +1459,12 @@
             "Title": "Configurar Alcance de Sentidos: {actor}",
             "IgnoreObscure": "Ignora Oscurecido"
         },
+        "ConfigureCarryCapacity": {
+            "Title": "Configurar capacidad de carga: {actor}"
+        },
+        "ConfigureLiftingCapacity": {
+            "Title": "Configurar capacidad de levantamiento: {actor}"
+        },
         "ConfigureRecoveryDie": {
             "Title": "Configurar Dado de Recuperación: {actor}"
         },
@@ -1536,12 +1514,6 @@
         },
         "EditEventRule": {
             "Title": "Editar Regla de Evento"
-        },
-        "ConfigureCarryCapacity": {
-            "Title": "Configurar capacidad de carga: {actor}"
-        },
-        "ConfigureLiftingCapacity": {
-            "Title": "Configurar capacidad de levantamiento: {actor}"
         }
     },
     "COMPONENT": {
@@ -1746,37 +1718,37 @@
             "name": "Expandir Descripción del Objeto por Defecto",
             "hint": "Determina si la sección de descripción de un objeto debe estar expandida por defecto al abrir la hoja del objeto."
         },
+        "expandSectionsByDefault": {
+            "name": "Expandir secciones de la ficha por defecto",
+            "hint": "Determina si las secciones de listas de acciones o equipo aparecen expandidas por defecto al abrir una ficha."
+        },
         "skillIncrementDecrementToggle": {
             "name": "Activar Comportamiento de Incremento de Pips de Habilidad",
             "hint": "Determina si los pips de habilidad aumentan/disminuyen con clic izquierdo o clic derecho, en lugar de establecerse al rango del pip clicado."
         },
+        "defaultTokenAutomationBars": {
+            "name": "Automatización de tokens: Barras",
+            "hint": "Determina si los tokens tendrán barras de recurso configuradas por defecto"
+        },
+        "defaultTokenAutomationSight": {
+            "name": "Automatización de tokens: Visión",
+            "hint": "Determina si la visión de los tokens se configurará automáticamente según los sentidos del actor"
+        },
+        "defaultTokenAutomationSize": {
+            "name": "Automatización de tokens: Tamaño",
+            "hint": "Determina si el tamaño de cuadrícula del token se ajustará automáticamente según el tamaño del actor"
+        },
+        "defaultTokenBar1Value": {
+            "name": "Recurso por defecto de la barra 1 del token",
+            "hint": "Determina el recurso del actor asociado por defecto a la barra 1 en los tokens."
+        },
+        "defaultTokenBar2Value": {
+            "name": "Recurso por defecto de la barra 2 del token",
+            "hint": "Determina el recurso del actor asociado por defecto a la barra 2 en los tokens."
+        },
         "systemTheme": {
             "name": "Tema del Sistema Preferido",
             "hint": "Especifica el conjunto de colores temáticos a usar para los documentos e interfaz del sistema. El tema seleccionado respetará el modo Oscuro/Claro preferido seleccionado en la configuración central."
-        },
-        "defaultTokenAutomationBars": {
-            "hint": "Determina si los tokens tendrán barras de recurso configuradas por defecto",
-            "name": "Automatización de tokens: Barras"
-        },
-        "defaultTokenAutomationSight": {
-            "hint": "Determina si la visión de los tokens se configurará automáticamente según los sentidos del actor",
-            "name": "Automatización de tokens: Visión"
-        },
-        "defaultTokenAutomationSize": {
-            "hint": "Determina si el tamaño de cuadrícula del token se ajustará automáticamente según el tamaño del actor",
-            "name": "Automatización de tokens: Tamaño"
-        },
-        "defaultTokenBar1Value": {
-            "hint": "Determina el recurso del actor asociado por defecto a la barra 1 en los tokens.",
-            "name": "Recurso por defecto de la barra 1 del token"
-        },
-        "defaultTokenBar2Value": {
-            "hint": "Determina el recurso del actor asociado por defecto a la barra 2 en los tokens.",
-            "name": "Recurso por defecto de la barra 2 del token"
-        },
-        "expandSectionsByDefault": {
-            "hint": "Determina si las secciones de listas de acciones o equipo aparecen expandidas por defecto al abrir una ficha.",
-            "name": "Expandir secciones de la ficha por defecto"
         },
         "measurementUnitSystem": {
             "name": "Sistema de unidades",

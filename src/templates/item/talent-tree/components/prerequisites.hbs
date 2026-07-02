@@ -44,10 +44,10 @@
                         {{/if}}
                     {{/each}}
                 {{else if (eq rule.type "attribute")}}
-                    <span>{{localize (concat "COSMERE.Attribute." rule.attribute)}}</span>
+                    <span>{{localize (concat "COSMERE.Actor.Attribute." rule.attribute ".long")}}</span>
                     <span>{{rule.value}}+</span>
                 {{else if (eq rule.type "skill")}}
-                    <span>{{localize (concat "COSMERE.Skill." rule.skill)}}</span>
+                    <span>{{localize (concat "COSMERE.Actor.Skill." rule.skill)}}</span>
                     <span>{{rule.rank}}+</span>
                 {{else if (eq rule.type "connection")}}
                     <span>{{rule.description}}</span>

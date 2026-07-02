@@ -1102,9 +1102,9 @@ export class CosmereItem<
                 flavor = flavor
                     ? flavor
                     : `${game.i18n.localize(
-                          `COSMERE.Skill.${attackResult[0].data.skill.id}`,
+                          `COSMERE.Actor.Skill.${attackResult[0].data.skill.id}`,
                       )} (${game.i18n.localize(
-                          `COSMERE.Attribute.${attackResult[0].data.skill.attribute}`,
+                          `COSMERE.Actor.Attribute.${attackResult[0].data.skill.attribute}.long`,
                       )})`;
             } else {
                 if (hasDamage) {
@@ -1135,9 +1135,9 @@ export class CosmereItem<
                     flavor = flavor
                         ? flavor
                         : `${game.i18n.localize(
-                              `COSMERE.Skill.${roll.data.skill.id}`,
+                              `COSMERE.Actor.Skill.${roll.data.skill.id}`,
                           )} (${game.i18n.localize(
-                              `COSMERE.Attribute.${roll.data.skill.attribute}`,
+                              `COSMERE.Actor.Attribute.${roll.data.skill.attribute}.long`,
                           )})`;
                 }
             }
