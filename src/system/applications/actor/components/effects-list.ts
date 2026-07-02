@@ -26,9 +26,9 @@ interface RenderContext extends BaseActorSheetRenderContext {
 
 // Constants
 const TITLE_MAP: Record<EffectListType, string> = {
-    inactive: 'COSMERE.Sheet.Effects.Inactive',
-    passive: 'COSMERE.Sheet.Effects.Passive',
-    temporary: 'COSMERE.Sheet.Effects.Temporary',
+    inactive: 'COSMERE.SheetCommon.Effects.Inactive',
+    passive: 'COSMERE.SheetCommon.Effects.Passive',
+    temporary: 'COSMERE.SheetCommon.Effects.Temporary',
 };
 
 export class ActorEffectsListComponent extends HandlebarsApplicationComponent<

@@ -1225,60 +1225,7 @@
                 }
             }
         },
-        "Attack": {
-            "Type": {
-                "Melee": "Cuerpo a Cuerpo",
-                "Ranged": "A Distancia"
-            }
-        },
-        "DamageTypes": {
-            "Energy": "Energía",
-            "Impact": "Impacto",
-            "Keen": "Filo",
-            "Spirit": "Espíritu",
-            "Vital": "Vital",
-            "Healing": "Curación"
-        },
-        "Paths": {
-            "Types": {
-                "Heroic": {
-                    "Label": "Heroico"
-                }
-            }
-        },
-        "Currencies": {},
-        "Combat": {
-            "FastPlayers": "Personajes Rápidos",
-            "SlowPlayers": "Personajes Lentos",
-            "FastAdversaries": "Adversarios Rápidos",
-            "SlowAdversaries": "Adversarios Lentos",
-            "ToggleTurn": "Cambiar Velocidad de Turno",
-            "ResetActivation": "Reiniciar Activación",
-            "Activate": "Marcar como Actuado"
-        },
-        "Status": {
-            "Afflicted": "Afligido",
-            "Blind": "Ciego",
-            "Burrowing": "Excavando",
-            "Determined": "Determinado",
-            "Disoriented": "Desorientado",
-            "Empowered": "Empoderado",
-            "Enhanced": "Potenciado",
-            "Exhausted": "Exhausto",
-            "Flying": "Volando",
-            "Focused": "Concentrado",
-            "Hidden": "Oculto",
-            "Immobilized": "Inmovilizado",
-            "Invisible": "Invisible",
-            "Prone": "Derribado",
-            "Restrained": "Retenido",
-            "Slowed": "Ralentizado",
-            "Stunned": "Aturdido",
-            "Surprised": "Sorprendido",
-            "Unconscious": "Inconsciente",
-            "Dead": "Muerto"
-        },
-        "Sheet": {
+        "SheetCommon": {
             "Descriptions": {
                 "DescriptionHeader": "Descripción",
                 "ShortHeader": "Descripción Corta",
@@ -1316,6 +1263,58 @@
                 "Submit": "Finalizar Edición"
             }
         },
+        "Attack": {
+            "Type": {
+                "Melee": "Cuerpo a Cuerpo",
+                "Ranged": "A Distancia"
+            }
+        },
+        "DamageTypes": {
+            "Energy": "Energía",
+            "Impact": "Impacto",
+            "Keen": "Filo",
+            "Spirit": "Espíritu",
+            "Vital": "Vital",
+            "Healing": "Curación"
+        },
+        "Paths": {
+            "Types": {
+                "Heroic": {
+                    "Label": "Heroico"
+                }
+            }
+        },
+        "Combat": {
+            "FastPlayers": "Personajes Rápidos",
+            "SlowPlayers": "Personajes Lentos",
+            "FastAdversaries": "Adversarios Rápidos",
+            "SlowAdversaries": "Adversarios Lentos",
+            "ToggleTurn": "Cambiar Velocidad de Turno",
+            "ResetActivation": "Reiniciar Activación",
+            "Activate": "Marcar como Actuado"
+        },
+        "Status": {
+            "Afflicted": "Afligido",
+            "Blind": "Ciego",
+            "Burrowing": "Excavando",
+            "Determined": "Determinado",
+            "Disoriented": "Desorientado",
+            "Empowered": "Empoderado",
+            "Enhanced": "Potenciado",
+            "Exhausted": "Exhausto",
+            "Flying": "Volando",
+            "Focused": "Concentrado",
+            "Hidden": "Oculto",
+            "Immobilized": "Inmovilizado",
+            "Invisible": "Invisible",
+            "Prone": "Derribado",
+            "Restrained": "Retenido",
+            "Slowed": "Ralentizado",
+            "Stunned": "Aturdido",
+            "Surprised": "Sorprendido",
+            "Unconscious": "Inconsciente",
+            "Dead": "Muerto"
+        },
         "ChatMessage": {
             "Buttons": {
                 "DamageFull": "Clic para aplicar daño completo a los tokens seleccionados.",
@@ -1352,9 +1351,6 @@
         },
         "Theme": {
             "Default": "Cosmere"
-        },
-        "Damage": {
-            "IgnoreDeflect": "Ignorar Desvío"
         },
         "Migration": {
             "DocumentMigrationFailed": "Error al migrar {type} \"{name}\". {error}"
@@ -1438,7 +1434,8 @@
             "Label": "Daño",
             "Apply": "Aplicar",
             "Graze": "Roce",
-            "Full": "Completo"
+            "Full": "Completo",
+            "IgnoreDeflect": "Ignorar Desvío"
         },
         "TemporaryBonus": {
             "Label": "Bonificación Temporal",

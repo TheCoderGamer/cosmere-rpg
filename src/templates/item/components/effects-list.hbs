@@ -3,16 +3,16 @@
         <section class="details">
             <span class="title">{{localize title}}</span>
             <span class="subtitle wide">
-                {{localize "COSMERE.Sheet.Effects.Source"}}
+                {{localize "COSMERE.SheetCommon.Effects.Source"}}
             </span>
             <span class="subtitle wide">
-               {{localize "COSMERE.Sheet.Effects.Duration"}}
+               {{localize "COSMERE.SheetCommon.Effects.Duration"}}
             </span>
             <div class="subtitle thin"></div>
             <div class="controls icon active">
                 {{#if editable}}
                     <a data-action="create-effect"
-                        data-tooltip="COSMERE.Sheet.Effects.Create"
+                        data-tooltip="COSMERE.SheetCommon.Effects.Create"
                     >
                         <i class="fa-solid fa-plus"></i>
                     </a>
@@ -42,14 +42,14 @@
                 {{#if effect.active}}
                 <a class="icon active"
                     data-action="toggle-effect-active"
-                    data-tooltip="COSMERE.Sheet.Effects.Disable"
+                    data-tooltip="COSMERE.SheetCommon.Effects.Disable"
                 >
                     <i class="fa-solid fa-toggle-on"></i>
                 </a>
                 {{else}}
                 <a class="icon faded"
                     data-action="toggle-effect-active"
-                    data-tooltip="COSMERE.Sheet.Effects.Enable"
+                    data-tooltip="COSMERE.SheetCommon.Effects.Enable"
                 >
                     <i class="fa-solid fa-toggle-off"></i>
                 </a>
@@ -58,12 +58,12 @@
             <div class="controls icon faded">
                 {{#if @root.editable}}
                 <a data-action="edit-effect"
-                    data-tooltip="COSMERE.Sheet.Effects.Edit"
+                    data-tooltip="COSMERE.SheetCommon.Effects.Edit"
                 >
                     <i class="fa-solid fa-pen-to-square"></i>
                 </a>
                 <a data-action="delete-effect"
-                    data-tooltip="COSMERE.Sheet.Effects.Delete"
+                    data-tooltip="COSMERE.SheetCommon.Effects.Delete"
                 >
                     <i class="fa-solid fa-trash"></i>
                 </a>

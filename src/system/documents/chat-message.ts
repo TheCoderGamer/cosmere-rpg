@@ -569,7 +569,7 @@ export class CosmereChatMessage<
                 : undefined;
         const calculationIgnore =
             damageIgnore > 0
-                ? `${damageIgnore} <i data-tooltip="COSMERE.Damage.IgnoreDeflect" class='fas fa-shield-slash'></i>`
+                ? `${damageIgnore} <i data-tooltip="DICE.Damage.IgnoreDeflect" class='fas fa-shield-slash'></i>`
                 : undefined;
         const calculationImmune =
             damageImmune > 0 ? immunitiesBreakdown : undefined;

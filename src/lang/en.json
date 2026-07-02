@@ -1225,60 +1225,7 @@
                 }
             }
         },
-        "Attack": {
-            "Type": {
-                "Melee": "Melee",
-                "Ranged": "Ranged"
-            }
-        },
-        "DamageTypes": {
-            "Energy": "Energy",
-            "Impact": "Impact",
-            "Keen": "Keen",
-            "Spirit": "Spirit",
-            "Vital": "Vital",
-            "Healing": "Healing"
-        },
-        "Paths": {
-            "Types": {
-                "Heroic": {
-                    "Label": "Heroic"
-                }
-            }
-        },
-        "Currencies": {},
-        "Combat": {
-            "FastPlayers": "Fast Characters",
-            "SlowPlayers": "Slow Characters",
-            "FastAdversaries": "Fast Adversaries",
-            "SlowAdversaries": "Slow Adversaries",
-            "ToggleTurn": "Toggle Turn Speed",
-            "ResetActivation": "Reset Activation",
-            "Activate": "Mark as Acted"
-        },
-        "Status": {
-            "Afflicted": "Afflicted",
-            "Blind": "Senseblind",
-            "Burrowing": "Burrowing",
-            "Determined": "Determined",
-            "Disoriented": "Disoriented",
-            "Empowered": "Empowered",
-            "Enhanced": "Enhanced",
-            "Exhausted": "Exhausted",
-            "Flying": "Flying",
-            "Focused": "Focused",
-            "Hidden": "Hidden",
-            "Immobilized": "Immobilized",
-            "Invisible": "Invisible",
-            "Prone": "Prone",
-            "Restrained": "Restrained",
-            "Slowed": "Slowed",
-            "Stunned": "Stunned",
-            "Surprised": "Surprised",
-            "Unconscious": "Unconscious",
-            "Dead": "Dead"
-        },
-        "Sheet": {
+        "SheetCommon": {
             "Descriptions": {
                 "DescriptionHeader": "Description",
                 "ShortHeader": "Short Description",
@@ -1316,6 +1263,58 @@
                 "Submit": "Finish Editing"
             }
         },
+        "Attack": {
+            "Type": {
+                "Melee": "Melee",
+                "Ranged": "Ranged"
+            }
+        },
+        "DamageTypes": {
+            "Energy": "Energy",
+            "Impact": "Impact",
+            "Keen": "Keen",
+            "Spirit": "Spirit",
+            "Vital": "Vital",
+            "Healing": "Healing"
+        },
+        "Paths": {
+            "Types": {
+                "Heroic": {
+                    "Label": "Heroic"
+                }
+            }
+        },
+        "Combat": {
+            "FastPlayers": "Fast Characters",
+            "SlowPlayers": "Slow Characters",
+            "FastAdversaries": "Fast Adversaries",
+            "SlowAdversaries": "Slow Adversaries",
+            "ToggleTurn": "Toggle Turn Speed",
+            "ResetActivation": "Reset Activation",
+            "Activate": "Mark as Acted"
+        },
+        "Status": {
+            "Afflicted": "Afflicted",
+            "Blind": "Senseblind",
+            "Burrowing": "Burrowing",
+            "Determined": "Determined",
+            "Disoriented": "Disoriented",
+            "Empowered": "Empowered",
+            "Enhanced": "Enhanced",
+            "Exhausted": "Exhausted",
+            "Flying": "Flying",
+            "Focused": "Focused",
+            "Hidden": "Hidden",
+            "Immobilized": "Immobilized",
+            "Invisible": "Invisible",
+            "Prone": "Prone",
+            "Restrained": "Restrained",
+            "Slowed": "Slowed",
+            "Stunned": "Stunned",
+            "Surprised": "Surprised",
+            "Unconscious": "Unconscious",
+            "Dead": "Dead"
+        },
         "ChatMessage": {
             "Buttons": {
                 "DamageFull": "Click to apply full damage to selected token(s).",
@@ -1352,9 +1351,6 @@
         },
         "Theme": {
             "Default": "Cosmere"
-        },
-        "Damage": {
-            "IgnoreDeflect": "Ignore Deflect"
         },
         "Migration": {
             "DocumentMigrationFailed": "Failed to migrate {type} \"{name}\". {error}"
@@ -1438,7 +1434,8 @@
             "Label": "Damage",
             "Apply": "Apply",
             "Graze": "Graze",
-            "Full": "Full"
+            "Full": "Full",
+            "IgnoreDeflect": "Ignore Deflect"
         },
         "TemporaryBonus": {
             "Label": "Temporary Bonus",
