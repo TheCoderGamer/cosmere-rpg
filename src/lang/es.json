@@ -237,6 +237,7 @@
                 "ConfigureMovement": "Configurar Velocidad de Movimiento",
                 "ConfigureSensesRange": "Configurar Alcance de Sentidos",
                 "ConfigureRecovery": "Configurar Dado de Recuperación",
+                "ConfigureLiftingCapacity": "Configurar Capacidad de Carga",
                 "RollInjury": "Tirar Herida",
                 "ImmuneTo": "Inmune a {condition}",
                 "Tabs": {
