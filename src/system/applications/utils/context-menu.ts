@@ -125,13 +125,6 @@ export class AppContextMenu {
     private items?: AppContextMenu.Item[];
     private itemsFn?: (element: HTMLElement) => AppContextMenu.Item[];
 
-    /**
-     * Tracks elements that already have a bound toggle listener, so that
-     * repeated calls to `bind()` (triggered on every parent re-render) don't
-     * stack duplicate listeners on the same DOM node.
-     */
-    private readonly boundElements = new WeakSet<HTMLElement>();
-
     private constructor(
         public readonly parent: AppContextMenu.Parent,
         private anchor: AppContextMenu.Anchor,
@@ -238,9 +231,6 @@ export class AppContextMenu {
 
         // Attach listeners
         elements.forEach((element) => {
-            if (this.boundElements.has(element)) return;
-            this.boundElements.add(element);
-
             element.addEventListener(event, (event) => {
                 const shouldShow =
                     !this.expanded || this.contextElement !== element;
@@ -309,14 +299,6 @@ export class AppContextMenu {
 
         // If the first argument is not an element, re-render
         if (!firstArgIsElement) this.rendered = false;
-
-        // If our previously-rendered element was silently detached from the
-        // DOM (e.g. the parent sheet re-rendered and replaced its content),
-        // `rendered` would still report true even though the node no longer
-        // does anything when shown. Force a fresh render in that case.
-        if (this.rendered && this._element && !this._element.isConnected) {
-            this.rendered = false;
-        }
 
         // Set the context element
         this.contextElement = element;
