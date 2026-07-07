@@ -2,7 +2,7 @@
     "id": "cosmere-rpg",
     "title": "Cosmere Roleplaying Game",
     "description": "A community-developed system for playing the Cosmere Roleplaying Game, by Dragonsteel Entertainment and Brotherwise Games.",
-    "version": "2.2.3",
+    "version": "2.2.4",
     "compatibility": {
         "minimum": "13.346",
         "verified": "14"
@@ -174,5 +174,5 @@
     "background": "systems/cosmere-rpg/assets/art/foundry_setup_Cosmere_RPG.webp",
     "url": "https://kodegit.torakode.com/TheCoder/cosmere-rpg",
     "manifest": "https://kodegit.torakode.com/TheCoder/cosmere-rpg/raw/branch/main/src/system.json",
-    "download": "https://kodegit.torakode.com/TheCoder/cosmere-rpg/releases/download/v2.2.3/release.zip"
+    "download": "https://kodegit.torakode.com/TheCoder/cosmere-rpg/releases/download/v2.2.4/release.zip"
 }
