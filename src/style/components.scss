@@ -1,9 +1,16 @@
 // Ensure our custom context menu (appended directly into the application
-// element, outside the normal Handlebars-rendered content) always paints
-// above Foundry's own window chrome decoration (e.g. `.window-background`,
-// `.window-corners`), which in some Foundry versions can otherwise sit on
-// top of it and swallow clicks intended for the menu's buttons.
+// element, outside the normal Handlebars-rendered content) is actually
+// positioned via the `top`/`left`/`right` inline styles set in JS.
+// The `.controls-dropdown` core class only gets `position: absolute` from
+// Foundry when used in its native header-controls context; appended directly
+// to the sheet's form element like we do here, it otherwise stays `static`
+// and gets laid out in normal document flow (landing at the very bottom of
+// the sheet, as the last appended child) instead of anchored to the toggle
+// button. It also needs a non-static position for `z-index` to have any
+// effect at all, which is what lets it paint above Foundry's window chrome
+// decoration (`.window-background`, `.window-corners`).
 .cosmere-context-menu {
+    position: absolute;
     z-index: 1000;
 }
 
