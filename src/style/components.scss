@@ -1,3 +1,12 @@
+// Ensure our custom context menu (appended directly into the application
+// element, outside the normal Handlebars-rendered content) always paints
+// above Foundry's own window chrome decoration (e.g. `.window-background`,
+// `.window-corners`), which in some Foundry versions can otherwise sit on
+// top of it and swallow clicks intended for the menu's buttons.
+.cosmere-context-menu {
+    z-index: 1000;
+}
+
 app-multi-state-toggle {
     position: relative;
     display: flex;
